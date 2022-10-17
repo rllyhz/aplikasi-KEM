@@ -1,3 +1,3 @@
 # K.E.M (Kemampuan Efektif Membaca)
 
-Aplikasi ini dibuat untuk meningkatkan kemampuan membaca siswa.
+Aplikasi ini dibuat agar dapat meningkatkan kemampuan membaca siswa.
