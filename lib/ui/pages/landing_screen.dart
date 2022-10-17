@@ -7,12 +7,14 @@ class LandingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'Hello there!',
-        style: Theme.of(context).textTheme.bodyText1?.copyWith(
-              color: Colors.white,
-            ),
+    return Scaffold(
+      body: Center(
+        child: Text(
+          'Hello there!',
+          style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                color: Colors.white,
+              ),
+        ),
       ),
     );
   }
