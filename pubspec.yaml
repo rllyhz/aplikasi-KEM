@@ -82,6 +82,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/icons/icon_logo.svg
+    - assets/icons/icon_logo_colored.svg
+
   fonts:
     - family: Inter
       fonts:
