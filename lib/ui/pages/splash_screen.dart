@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
+import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart';
 import 'package:aplikasi_kem/utils/ui/font_utils.dart';
 import 'package:aplikasi_kem/utils/values/strings.dart' as string;
@@ -44,8 +45,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 color: whiteColor,
               ),
             ),
-            const SizedBox(
-              height: 8.0,
+            const Space(
+              size: 8.0,
             ),
             Text(
               string.appTagline,
