@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
       const Duration(
         seconds: 3,
       ),
-      () => Navigator.pushNamed(context, LandingScreen.route),
+      () => Navigator.pushReplacementNamed(context, LandingScreen.route),
     );
   }
 
