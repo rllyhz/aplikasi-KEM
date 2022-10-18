@@ -10,5 +10,9 @@ Map<String, Widget Function(BuildContext context)> build() {
 }
 
 void navigateTo(BuildContext context, String routeName) {
+  Navigator.pushNamed(context, routeName);
+}
+
+void replaceWith(BuildContext context, String routeName) {
   Navigator.pushReplacementNamed(context, routeName);
 }
