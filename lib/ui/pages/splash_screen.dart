@@ -5,6 +5,7 @@ import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart';
 import 'package:aplikasi_kem/utils/ui/font_utils.dart';
 import 'package:aplikasi_kem/utils/values/strings.dart' as string_resource;
+import 'package:aplikasi_kem/utils/routes.dart' as routes;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -26,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
       const Duration(
         seconds: 3,
       ),
-      () => Navigator.pushReplacementNamed(context, LandingScreen.route),
+      () => routes.replaceWith(context, LandingScreen.route),
     );
   }
 
