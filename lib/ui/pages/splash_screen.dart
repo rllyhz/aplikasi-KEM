@@ -33,29 +33,45 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: blueColor,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset('assets/icons/icon_logo.svg'),
-            Text(
-              string_resource.appTaglineAbbreviation,
-              style: getSplashScreenTextStyle(
-                color: whiteColor,
+      body: Stack(
+        children: [
+          // background
+          Center(
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width,
+              child: Image.asset(
+                'assets/images/splash/illustration.png',
+                fit: BoxFit.fill,
               ),
             ),
-            const Space(
-              size: 8.0,
+          ),
+
+          // logo
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgPicture.asset('assets/icons/icon_logo.svg'),
+                Text(
+                  string_resource.appTaglineAbbreviation,
+                  style: getSplashScreenTextStyle(
+                    color: whiteColor,
+                  ),
+                ),
+                const Space(
+                  size: 8.0,
+                ),
+                Text(
+                  string_resource.appTagline,
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyText2
+                      ?.copyWith(color: whiteColor),
+                ),
+              ],
             ),
-            Text(
-              string_resource.appTagline,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyText2
-                  ?.copyWith(color: whiteColor),
-            ),
-          ],
-        ),
+          )
+        ],
       ),
     );
   }
