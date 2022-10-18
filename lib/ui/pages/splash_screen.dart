@@ -4,7 +4,7 @@ import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart';
 import 'package:aplikasi_kem/utils/ui/font_utils.dart';
-import 'package:aplikasi_kem/utils/values/strings.dart' as string;
+import 'package:aplikasi_kem/utils/values/strings.dart' as string_resource;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             SvgPicture.asset('assets/icons/icon_logo.svg'),
             Text(
-              string.appTaglineAbbreviation,
+              string_resource.appTaglineAbbreviation,
               style: getSplashScreenTextStyle(
                 color: whiteColor,
               ),
@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
               size: 8.0,
             ),
             Text(
-              string.appTagline,
+              string_resource.appTagline,
               style: Theme.of(context)
                   .textTheme
                   .bodyText2
