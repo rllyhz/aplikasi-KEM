@@ -8,3 +8,7 @@ Map<String, Widget Function(BuildContext context)> build() {
     LandingScreen.route: (ctx) => const LandingScreen(),
   };
 }
+
+void navigateTo(BuildContext context, String routeName) {
+  Navigator.pushReplacementNamed(context, routeName);
+}
