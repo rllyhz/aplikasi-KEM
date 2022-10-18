@@ -1,53 +1,53 @@
-import 'package:aplikasi_kem/utils/values/sizes.dart';
+import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 import 'package:flutter/material.dart';
 
 const customFontFamilyName = 'Inter';
 const customFontFamily2Name = 'Good Times';
 
 const headingTextStyle = TextStyle(
-  fontSize: textSizeHeading,
+  fontSize: sizes.textSizeHeading,
   fontWeight: FontWeight.w700,
   fontFamily: customFontFamilyName,
 );
 
 const headline1TextStyle = TextStyle(
-  fontSize: textSizeMedium,
+  fontSize: sizes.textSizeMedium,
   fontWeight: FontWeight.w700,
   fontFamily: customFontFamilyName,
 );
 
 const headline2TextStyle = TextStyle(
-  fontSize: textSizeRegular,
+  fontSize: sizes.textSizeRegular,
   fontWeight: FontWeight.w600,
   fontFamily: customFontFamilyName,
 );
 
 const subtitle1TextStyle = TextStyle(
-  fontSize: textSizeRegular,
+  fontSize: sizes.textSizeRegular,
   fontWeight: FontWeight.w500,
   fontFamily: customFontFamilyName,
 );
 
 const subtitle2TextStyle = TextStyle(
-  fontSize: textSizeRegular,
+  fontSize: sizes.textSizeRegular,
   fontWeight: FontWeight.w600,
   fontFamily: customFontFamilyName,
 );
 
 const bodyText1TextStyle = TextStyle(
-  fontSize: textSizeRegular,
+  fontSize: sizes.textSizeRegular,
   fontWeight: FontWeight.w500,
   fontFamily: customFontFamilyName,
 );
 
 const bodyText2TextStyle = TextStyle(
-  fontSize: textSizeSmall,
+  fontSize: sizes.textSizeSmall,
   fontWeight: FontWeight.w400,
   fontFamily: customFontFamilyName,
 );
 
 const buttonTextStyle = TextStyle(
-  fontSize: textSizeRegular,
+  fontSize: sizes.textSizeRegular,
   fontWeight: FontWeight.w500,
   fontFamily: customFontFamilyName,
 );
@@ -70,7 +70,7 @@ TextStyle getSplashScreenTextStyle({
 }) {
   return TextStyle(
     fontFamily: customFontFamily2Name,
-    fontSize: textSizeSplashScreenTagline,
+    fontSize: sizes.textSizeSplashScreenTagline,
     color: color,
     fontWeight: fontWeight,
   );
