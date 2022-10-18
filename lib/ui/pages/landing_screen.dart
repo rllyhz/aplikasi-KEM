@@ -1,7 +1,9 @@
+import 'package:aplikasi_kem/ui/pages/dashboard_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/custom_button.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
+import 'package:aplikasi_kem/utils/routes.dart' as routes;
 import 'package:flutter/material.dart';
 
 class LandingScreen extends StatelessWidget {
@@ -57,7 +59,9 @@ class LandingScreen extends StatelessWidget {
                       CustomButton(
                         text: 'Yuk Mulai!',
                         textColor: colors.whiteColor,
-                        onPressed: () {},
+                        onPressed: () {
+                          routes.replaceWith(context, DashboardScreen.route);
+                        },
                       ),
                       const Space(
                         size: 120.0,
