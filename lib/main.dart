@@ -1,5 +1,5 @@
 import 'package:aplikasi_kem/ui/pages/splash_screen.dart';
-import 'package:aplikasi_kem/utils/routes.dart';
+import 'package:aplikasi_kem/utils/routes.dart' as routes;
 import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:aplikasi_kem/utils/values/strings.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: appName,
       debugShowCheckedModeBanner: false,
       theme: getCustomThemeData(),
-      routes: buildRoutes(),
+      routes: routes.build(),
       initialRoute: SplashScreen.route,
     );
   }
