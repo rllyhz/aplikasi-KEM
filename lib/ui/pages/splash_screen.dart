@@ -2,9 +2,10 @@ import 'dart:async';
 
 import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
-import 'package:aplikasi_kem/utils/ui/color_utils.dart';
-import 'package:aplikasi_kem/utils/ui/font_utils.dart';
+import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
+import 'package:aplikasi_kem/utils/ui/font_utils.dart' as text_styles;
 import 'package:aplikasi_kem/utils/values/strings.dart' as string_resource;
+import 'package:aplikasi_kem/utils/values/constants.dart' as constants;
 import 'package:aplikasi_kem/utils/routes.dart' as routes;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -24,7 +25,9 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Future.delayed(
-      const Duration(milliseconds: 3000),
+      const Duration(
+        milliseconds: constants.splashTimeDelayInMilliseconds,
+      ),
       () => routes.replaceWith(context, LandingScreen.route),
     );
   }
@@ -32,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: blueColor,
+      backgroundColor: colors.blueColor,
       body: Stack(
         children: [
           // background
@@ -54,8 +57,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 SvgPicture.asset('assets/icons/icon_logo.svg'),
                 Text(
                   string_resource.appTaglineAbbreviation,
-                  style: getSplashScreenTextStyle(
-                    color: whiteColor,
+                  style: text_styles.getSplashScreenTextStyle(
+                    color: colors.whiteColor,
                   ),
                 ),
                 const Space(
@@ -63,10 +66,9 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 Text(
                   string_resource.appTagline,
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText2
-                      ?.copyWith(color: whiteColor),
+                  style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                        color: colors.whiteColor,
+                      ),
                 ),
               ],
             ),
