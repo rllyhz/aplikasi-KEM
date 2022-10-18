@@ -12,7 +12,7 @@ class LandingScreen extends StatelessWidget {
         child: Text(
           'Hello there!',
           style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                color: Colors.white,
+                color: Colors.grey,
               ),
         ),
       ),

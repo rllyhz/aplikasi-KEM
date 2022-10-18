@@ -23,10 +23,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    Timer(
-      const Duration(
-        seconds: 3,
-      ),
+    Future.delayed(
+      const Duration(milliseconds: 3000),
       () => routes.replaceWith(context, LandingScreen.route),
     );
   }
