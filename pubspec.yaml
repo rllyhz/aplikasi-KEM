@@ -85,6 +85,7 @@ flutter:
   assets:
     - assets/icons/icon_logo.svg
     - assets/icons/icon_logo_colored.svg
+    - assets/images/splash/illustration.png
 
   fonts:
     - family: Inter
