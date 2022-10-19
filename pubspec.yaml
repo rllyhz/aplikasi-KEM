@@ -97,6 +97,7 @@ flutter:
     - assets/images/dashboard/man_flying_on_a_rocket.png
     - assets/images/dashboard/online_business_negotiation.png
     - assets/images/dashboard/web_page_update.png
+    - assets/images/reading/main_illustration.png
 
   fonts:
     - family: Inter
