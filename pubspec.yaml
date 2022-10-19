@@ -85,9 +85,17 @@ flutter:
   assets:
     - assets/icons/icon_logo.svg
     - assets/icons/icon_logo_colored.svg
+    - assets/icons/icon_arrow_right.svg
     - assets/images/splash/illustration.png
     - assets/images/landing/shaped_background.png
     - assets/images/landing/all_illustration.png
+    - assets/images/dashboard/top_background.png
+    - assets/images/dashboard/reading.png
+    - assets/images/dashboard/completed_form.png
+    - assets/images/dashboard/girls_study_together.png
+    - assets/images/dashboard/man_flying_on_a_rocket.png
+    - assets/images/dashboard/online_business_negotiation.png
+    - assets/images/dashboard/web_page_update.png
 
   fonts:
     - family: Inter
