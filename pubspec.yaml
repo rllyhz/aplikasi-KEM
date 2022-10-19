@@ -86,6 +86,7 @@ flutter:
     - assets/icons/icon_logo.svg
     - assets/icons/icon_logo_colored.svg
     - assets/icons/icon_arrow_right.svg
+    - assets/icons/icon_navigate_up.svg
     - assets/images/splash/illustration.png
     - assets/images/landing/shaped_background.png
     - assets/images/landing/all_illustration.png
