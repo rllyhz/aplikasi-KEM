@@ -40,6 +40,7 @@ class MainDetailScaffold extends StatelessWidget {
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
                   child: Padding(
                     padding: const EdgeInsets.only(
                         top: 12.0, bottom: 24.0, left: 8.0, right: 8.0),
