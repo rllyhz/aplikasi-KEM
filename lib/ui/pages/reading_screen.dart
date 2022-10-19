@@ -15,7 +15,7 @@ class ReadingScreen extends StatelessWidget {
       appBarTitleText: 'Materi Membaca',
       appBarTitleTextColor: colors.darkTextColor,
       tagline: 'Bersemangatlah dalam mempelajari sesuatu yang bermanfaat',
-      illustrationAssetName: 'assets/images/dashboard/web_page_update.png',
+      illustrationAssetName: 'assets/images/reading/main_illustration.png',
       body: Column(
         children: [
           // Menu buttons
