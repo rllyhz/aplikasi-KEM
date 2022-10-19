@@ -7,15 +7,15 @@ import 'package:flutter_svg/flutter_svg.dart';
 class SimpleAppBar extends StatelessWidget {
   const SimpleAppBar({
     super.key,
-    required this.titleText,
     required this.color,
+    this.titleText,
     this.enableNavigateUp,
     this.backgroundColor,
     this.leading,
   });
 
-  final String titleText;
   final Color color;
+  final String? titleText;
   final Color? backgroundColor;
   final bool? enableNavigateUp;
   final Widget? leading;
@@ -61,15 +61,17 @@ class SimpleAppBar extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.center,
-            child: Center(
-              child: Text(
-                titleText,
-                style: Theme.of(context).textTheme.headline2?.copyWith(
-                      color: colors.darkTextColor,
-                      fontSize: sizes.textSizeMedium,
+            child: titleText == null
+                ? null
+                : Center(
+                    child: Text(
+                      titleText!,
+                      style: Theme.of(context).textTheme.headline2?.copyWith(
+                            color: colors.darkTextColor,
+                            fontSize: sizes.textSizeMedium,
+                          ),
                     ),
-              ),
-            ),
+                  ),
           ),
         ],
       ),

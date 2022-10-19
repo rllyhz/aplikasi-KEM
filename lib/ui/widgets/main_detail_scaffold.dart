@@ -7,14 +7,14 @@ import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 class MainDetailScaffold extends StatelessWidget {
   const MainDetailScaffold({
     super.key,
-    required this.appBarTitleText,
+    this.appBarTitleText,
     required this.appBarTitleTextColor,
     this.illustrationAssetName,
     this.body,
     this.tagline,
   });
 
-  final String appBarTitleText;
+  final String? appBarTitleText;
   final Color appBarTitleTextColor;
   final String? illustrationAssetName;
   final String? tagline;
