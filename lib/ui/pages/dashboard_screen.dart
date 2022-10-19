@@ -1,9 +1,11 @@
+import 'package:aplikasi_kem/ui/pages/reading_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
 import 'package:aplikasi_kem/ui/widgets/illustration_card_button.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
+import 'package:aplikasi_kem/utils/routes.dart' as routes;
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -114,7 +116,9 @@ class DashboardScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: 18.0, right: 18.0, top: 12.0, bottom: 0),
               textColor: colors.whiteColor,
-              onIconPressed: () {},
+              onIconPressed: () {
+                routes.navigateTo(context, ReadingScreen.route);
+              },
             ),
             IllustrationCardButton(
               text: 'Materi K.E.M',
