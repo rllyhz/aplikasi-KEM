@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-const backgroundColor = Color(0xFFF5F5F5);
-const greyColor = Color.fromRGBO(28, 28, 255, 0.11);
+const backgroundColor = Color(0xFFFFFFFF);
+const greyColor = Color.fromARGB(129, 217, 217, 217);
 const whiteColor = Color(0xFFFFFFFF);
 const errorColor = Colors.redAccent;
 const headingTextColor = Color(0xFF1C1C1C);
