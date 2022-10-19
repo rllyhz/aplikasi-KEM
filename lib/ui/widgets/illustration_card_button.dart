@@ -38,7 +38,7 @@ class IllustrationCardButton extends StatelessWidget {
       borderRadiusSize: borderRadiusSize,
       elevation: elevation,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Flexible(
@@ -48,32 +48,33 @@ class IllustrationCardButton extends StatelessWidget {
               fit: BoxFit.fitWidth,
             ),
           ),
-          const Space(size: 24.0),
-          SizedBox(
-            width: maxWidth,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SizedBox(
-                  width: maxTextWidth,
-                  child: Text(
-                    text,
-                    style: Theme.of(context).textTheme.headline2?.copyWith(
-                          fontSize: sizes.textSizeMedium,
-                          color: textColor,
-                        ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 12.0),
+            child: SizedBox(
+              width: maxWidth,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: maxTextWidth,
+                    child: Text(
+                      text,
+                      style: Theme.of(context).textTheme.headline2?.copyWith(
+                            fontSize: sizes.textSizeMedium,
+                            color: textColor,
+                          ),
+                    ),
                   ),
-                ),
-                NextIconButton(
-                  backgroundColor: colors.whiteColor,
-                  iconColor: backgroundColor,
-                  onIconPressed: onIconPressed,
-                ),
-              ],
+                  NextIconButton(
+                    backgroundColor: colors.whiteColor,
+                    iconColor: backgroundColor,
+                    onIconPressed: onIconPressed,
+                  ),
+                ],
+              ),
             ),
           ),
-          const Space(size: 24.0),
         ],
       ),
     );
