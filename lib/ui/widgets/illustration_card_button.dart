@@ -1,4 +1,5 @@
 import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
+import 'package:aplikasi_kem/ui/widgets/next_icon_button.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
@@ -14,7 +15,7 @@ class IllustrationCardButton extends StatelessWidget {
     this.borderRadiusSize,
     this.textColor,
     this.elevation,
-    this.onPressed,
+    this.onIconPressed,
   });
 
   final String illustrationPath;
@@ -24,12 +25,12 @@ class IllustrationCardButton extends StatelessWidget {
   final EdgeInsetsGeometry? padding;
   final double? borderRadiusSize;
   final double? elevation;
-  final Function()? onPressed;
+  final Function()? onIconPressed;
 
   @override
   Widget build(BuildContext context) {
     var maxWidth = MediaQuery.of(context).size.width;
-    var maxTextWidth = maxWidth * 23.5 / 100;
+    var maxTextWidth = maxWidth * 20.5 / 100;
 
     return ColoredCard(
       backgroundColor: backgroundColor,
@@ -40,33 +41,39 @@ class IllustrationCardButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            illustrationPath,
-            fit: BoxFit.fitWidth,
+          Flexible(
+            flex: 2,
+            child: Image.asset(
+              illustrationPath,
+              fit: BoxFit.fitWidth,
+            ),
           ),
-          const Space(size: 12.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: maxTextWidth,
-                child: Text(
-                  text,
-                  style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                        fontSize: sizes.textSizeMedium,
-                        color: textColor,
-                      ),
+          const Space(size: 24.0),
+          SizedBox(
+            width: maxWidth,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(
+                  width: maxTextWidth,
+                  child: Text(
+                    text,
+                    style: Theme.of(context).textTheme.headline2?.copyWith(
+                          fontSize: sizes.textSizeMedium,
+                          color: textColor,
+                        ),
+                  ),
                 ),
-              ),
-              IconButton(
-                iconSize: 48.0,
-                color: colors.whiteColor,
-                onPressed: onPressed,
-                icon: const Icon(Icons.arrow_circle_right),
-              ),
-            ],
+                NextIconButton(
+                  backgroundColor: colors.whiteColor,
+                  iconColor: backgroundColor,
+                  onIconPressed: onIconPressed,
+                ),
+              ],
+            ),
           ),
+          const Space(size: 24.0),
         ],
       ),
     );
