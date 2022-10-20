@@ -98,6 +98,11 @@ flutter:
     - assets/images/dashboard/online_business_negotiation.png
     - assets/images/dashboard/web_page_update.png
     - assets/images/reading/main_illustration.png
+    - assets/images/reading/banner_1.png
+    - assets/images/reading/banner_2.png
+    - assets/images/reading/banner_3.png
+    - assets/images/reading/banner_4.png
+    - assets/images/reading/banner_5.png
 
   fonts:
     - family: Inter
