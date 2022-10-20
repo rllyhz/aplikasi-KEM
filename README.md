@@ -14,9 +14,9 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
 - [x] ReadingScreen
   - [x] ReadingFirstSectionScreen
   - [x] ReadingSecondSectionScreen
-  - [ ] ReadingThirdSectionScreen
-  - [ ] ReadingFourthSectionScreen
-  - [ ] ReadingFifthSectionScreen
+  - [x] ReadingThirdSectionScreen
+  - [x] ReadingFourthSectionScreen
+  - [x] ReadingFifthSectionScreen
 - [ ] KEMScreen
   - [ ] KEMFirstSectionScreen
   - [ ] KEMSecondSectionScreen
