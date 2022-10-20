@@ -11,9 +11,9 @@ class BannerScaffold extends StatelessWidget {
   const BannerScaffold({
     super.key,
     required this.bannerAssetName,
-    required this.illustrationDescription,
     required this.appBarTitleTextColor,
     required this.headingText,
+    this.illustrationDescription,
     this.body,
     this.appBarTitleText,
   });
@@ -21,7 +21,7 @@ class BannerScaffold extends StatelessWidget {
   final String? appBarTitleText;
   final Color appBarTitleTextColor;
   final String bannerAssetName;
-  final String illustrationDescription;
+  final String? illustrationDescription;
   final String headingText;
   final Widget? body;
 
@@ -67,20 +67,26 @@ class BannerScaffold extends StatelessWidget {
                         const Space(size: 16.0),
 
                         // Illustration description
-                        ParagraphText(
-                          text: illustrationDescription,
-                        ),
+                        illustrationDescription != null
+                            ? ParagraphText(
+                                text: illustrationDescription!,
+                              )
+                            : const Center(),
 
-                        const Space(size: 26.0),
+                        illustrationDescription != null
+                            ? const Space(size: 26.0)
+                            : const Center(),
 
                         // LineStroke
-                        Center(
-                          child: LineStroke(
-                            width: lineStrokeWidth,
-                            height: 3.0,
-                            color: colors.greyColor,
-                          ),
-                        ),
+                        illustrationDescription != null
+                            ? Center(
+                                child: LineStroke(
+                                  width: lineStrokeWidth,
+                                  height: 3.0,
+                                  color: colors.greyColor,
+                                ),
+                              )
+                            : const Center(),
 
                         const Space(size: 26.0),
 
