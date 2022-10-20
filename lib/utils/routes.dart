@@ -1,8 +1,11 @@
 import 'package:aplikasi_kem/ui/pages/dashboard_screen.dart';
 import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
+import 'package:aplikasi_kem/ui/pages/reading/reading_fifth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_first_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/reading/reading_fourth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_second_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/reading/reading_third_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/splash_screen.dart';
 import 'package:flutter/widgets.dart';
 
@@ -15,6 +18,10 @@ Map<String, Widget Function(BuildContext context)> build() {
     ReadingFirstSectionScreen.route: (ctx) => const ReadingFirstSectionScreen(),
     ReadingSecondSectionScreen.route: (ctx) =>
         const ReadingSecondSectionScreen(),
+    ReadingThirdSectionScreen.route: (ctx) => const ReadingThirdSectionScreen(),
+    ReadingFourthSectionScreen.route: (ctx) =>
+        const ReadingFourthSectionScreen(),
+    ReadingFifthSectionScreen.route: (ctx) => const ReadingFifthSectionScreen(),
   };
 }
 
