@@ -1,6 +1,6 @@
 # K.E.M (Kecepatan Efektif Membaca)
 
-Aplikasi ini dibuat agar dapat meningkatkan kecepatan membaca siswa.
+Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca siswa.
 
 `status:` *under-development*
 
