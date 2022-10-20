@@ -8,3 +8,11 @@ const textSizeHeading = 20.0;
 const textSizeSplashScreenTagline = 46.0;
 
 // Margins and Paddings
+const detailScreenVerticalPaddingSmall = 12.0;
+const detailScreenVerticalPaddingMedium = 24.0;
+
+const detailScreenHorizontalPaddingSmall = 8.0;
+const detailScreenHorizontalPaddingMedium = 18.0;
+
+const paragraphNewLineSmall = 16.0;
+const paragraphNewLineMedium = 24.0;
