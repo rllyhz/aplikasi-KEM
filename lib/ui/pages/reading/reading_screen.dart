@@ -1,8 +1,10 @@
+import 'package:aplikasi_kem/ui/pages/reading/reading_first_section_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/colored_card_button.dart';
 import 'package:aplikasi_kem/ui/widgets/main_detail_scaffold.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
+import 'package:aplikasi_kem/utils/routes.dart' as routes;
 
 class ReadingScreen extends StatelessWidget {
   const ReadingScreen({super.key});
@@ -23,7 +25,9 @@ class ReadingScreen extends StatelessWidget {
             label: 'Pengertian Membaca',
             textColor: colors.whiteColor,
             backgroundColor: colors.redColor,
-            onIconPressed: () {},
+            onIconPressed: () {
+              routes.navigateTo(context, ReadingFirstSectionScreen.route);
+            },
           ),
           const Space(size: 8.0),
           ColoredCardButton(
