@@ -10,11 +10,13 @@ class ParagraphList extends StatelessWidget {
     required this.list,
     this.numberingType = NumberingType.numeric,
     this.numberingSuffix = NumberingSuffix.dot,
+    this.padding,
   });
 
   final List<String> list;
   final NumberingType numberingType;
   final NumberingSuffix numberingSuffix;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context) {
@@ -28,22 +30,25 @@ class ParagraphList extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemCount: list.length,
-      itemBuilder: (ctx, index) => Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            _getFormattedNumberingText(index),
-            style: textStyle,
-          ),
-          const Space(size: 8.0, orientation: SpaceOrientation.vertical),
-          Expanded(
-            child: Text(
-              list[index],
+      itemBuilder: (ctx, index) => Padding(
+        padding: padding ?? const EdgeInsets.all(0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              _getFormattedNumberingText(index),
               style: textStyle,
             ),
-          ),
-        ],
+            const Space(size: 8.0, orientation: SpaceOrientation.vertical),
+            Expanded(
+              child: Text(
+                list[index],
+                style: textStyle,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
