@@ -8,14 +8,45 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
 
 ### Screens
 
- 1. [x] SplashScreen
- 1. [x] LandingScreen
- 1. [x] DashboardScreen
- 1. [x] ReadingScreen
- 1. [ ] ReadingFirstSectionScreen
- 1. [ ] ReadingSecondSectionScreen
- 1. [ ] ReadingFirstSectionScreen
- 1. [ ] ReadingFirstSectionScreen
+- [x] SplashScreen
+- [x] LandingScreen
+- [x] DashboardScreen
+- [x] ReadingScreen
+  - [ ] ReadingFirstSectionScreen
+  - [ ] ReadingSecondSectionScreen
+  - [ ] ReadingThirdSectionScreen
+  - [ ] ReadingFourthSectionScreen
+  - [ ] ReadingFifthSectionScreen
+- [ ] KEMScreen
+  - [ ] KEMFirstSectionScreen
+  - [ ] KEMSecondSectionScreen
+  - [ ] KEMThirdSectionScreen
+- [ ] KEMMeasurementScreen
+  - [ ] KEMMeasurementFirstSectionScreen
+  - [ ] KEMMeasurementSecondSectionScreen
+  - [ ] KEMMeasurementThirdSectionScreen
+  - [ ] KEMMeasurementFourthSectionScreen
+- [ ] ExerciseScreen
+  - [ ] ExerciseFirstSectionScreen
+  - [ ] ExerciseSecondSectionScreen
+  - [ ] ExerciseThirdSectionScreen
+  - [ ] ExerciseFourthSectionScreen
+  - [ ] ExerciseFifthSectionScreen
+  - [ ] ExerciseSixthSectionScreen
+- [ ] KEMIncreasementScreen
+  - [ ] KEMIncreasementFirstSectionScreen
+  - [ ] KEMIncreasementSecondSectionScreen
+    - [ ] KEMInreasementSecondDetailOneScreen
+    - [ ] KEMInreasementSecondDetailTwoScreen
+    - [ ] KEMInreasementSecondDetailThreeScreen
+    - [ ] KEMInreasementSecondDetailFourScreen
+  - [ ] KEMIncreasementThirdSectionScreen
+    - [ ] KEMInreasementThirdDetailOneScreen
+    - [ ] KEMInreasementThirdDetailTwoScreen
+  - [ ] KEMIncreasementFourthSectionScreen
+    - [ ] KEMInreasementFourthDetailOneScreen
+    - [ ] KEMInreasementFourthDetailTwoScreen
+    - [ ] KEMInreasementFourthDetailThreeScree
 
 ### Scaffold Widgets
 
