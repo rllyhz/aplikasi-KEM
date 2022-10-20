@@ -1,12 +1,8 @@
 import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/utils/ui/text_numbering_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
-
-enum SubHeadingSuffix {
-  dot,
-  parentheses,
-}
 
 class SubHeadingText extends StatelessWidget {
   const SubHeadingText({
@@ -15,14 +11,14 @@ class SubHeadingText extends StatelessWidget {
     this.isBold = true,
     this.isNumbering = false,
     this.numberingValue,
-    this.numberingSuffix = SubHeadingSuffix.dot,
+    this.numberingSuffix = NumberingSuffix.dot,
   });
 
   final String text;
   final bool isBold;
   final bool isNumbering;
   final String? numberingValue;
-  final SubHeadingSuffix numberingSuffix;
+  final NumberingSuffix numberingSuffix;
 
   @override
   Widget build(BuildContext context) {
@@ -68,17 +64,9 @@ class SubHeadingText extends StatelessWidget {
 
   String _getFormattedHeadingText() {
     if (numberingValue == null) {
-      return '1${_getNumberingSuffix()}';
+      return '1${getNumberingSuffixOf(numberingSuffix)}';
     } else {
-      return numberingValue! + _getNumberingSuffix();
-    }
-  }
-
-  String _getNumberingSuffix() {
-    if (numberingSuffix == SubHeadingSuffix.parentheses) {
-      return ')';
-    } else {
-      return '.';
+      return numberingValue! + getNumberingSuffixOf(numberingSuffix);
     }
   }
 }
