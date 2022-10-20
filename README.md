@@ -51,7 +51,7 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
 ### Scaffold Widgets
 
  1. [x] MainDetailScaffold
- 2. [ ] BannerScaffold
+ 2. [x] BannerScaffold
  3. [ ] GeneralScaffold
  4. [ ] ExerciseScaffold
 
