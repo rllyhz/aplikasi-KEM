@@ -19,3 +19,6 @@ const detailScreenHorizontalPaddingMedium = 18.0;
 const paragraphNewLineSmall = 8.0;
 const paragraphNewLineMedium = 14.0;
 const paragraphNewLineLarge = 20.0;
+
+const highlightTextBoxPaddingSmall = 18.0;
+const highlightTextBoxPaddingMedium = 28.0;
