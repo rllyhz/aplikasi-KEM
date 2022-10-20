@@ -14,5 +14,6 @@ const detailScreenVerticalPaddingMedium = 24.0;
 const detailScreenHorizontalPaddingSmall = 8.0;
 const detailScreenHorizontalPaddingMedium = 18.0;
 
-const paragraphNewLineSmall = 16.0;
-const paragraphNewLineMedium = 24.0;
+const paragraphNewLineSmall = 8.0;
+const paragraphNewLineMedium = 14.0;
+const paragraphNewLineLarge = 20.0;
