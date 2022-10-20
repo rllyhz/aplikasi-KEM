@@ -65,7 +65,7 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
  1. [x] Space
  1. [x] NextIconButton
  1. [x] HighlightTextBox
- 1. [ ] IndentationBox
+ 1. [x] IndentationBox
  1. [x] LineStroke
  1. [x] ParagraphText
  1. [x] MainHeadingText
