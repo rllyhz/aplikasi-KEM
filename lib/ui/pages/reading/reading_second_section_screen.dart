@@ -118,7 +118,7 @@ class ReadingSecondSectionScreen extends StatelessWidget {
           ),
 
           Space(
-            size: sizes.detailScreenVerticalPaddingSmall,
+            size: sizes.detailScreenVerticalPaddingMedium,
           ),
         ],
       ),

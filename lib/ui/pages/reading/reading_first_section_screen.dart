@@ -117,7 +117,7 @@ class ReadingFirstSectionScreen extends StatelessWidget {
           ),
 
           Space(
-            size: sizes.detailScreenVerticalPaddingSmall,
+            size: sizes.detailScreenVerticalPaddingMedium,
           ),
         ],
       ),
