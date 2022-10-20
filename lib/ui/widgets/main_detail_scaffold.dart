@@ -43,7 +43,11 @@ class MainDetailScaffold extends StatelessWidget {
                   physics: const BouncingScrollPhysics(),
                   child: Padding(
                     padding: const EdgeInsets.only(
-                        top: 12.0, bottom: 24.0, left: 8.0, right: 8.0),
+                      top: sizes.detailScreenVerticalPaddingSmall,
+                      bottom: sizes.detailScreenVerticalPaddingMedium,
+                      left: sizes.detailScreenHorizontalPaddingSmall,
+                      right: sizes.detailScreenHorizontalPaddingSmall,
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
