@@ -1,8 +1,8 @@
 # K.E.M (Kecepatan Efektif Membaca)
 
-Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca siswa.
-
 `status:` *under-development*
+
+Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca siswa.
 
 ## Note
 
@@ -28,5 +28,5 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
  5. [x] CustomButton
  6. [x] Space
  7. [x] NextIconButton
- 8. [ ] HighlightTextBox
+ 8. [-] HighlightTextBox
  9. [ ] LineStroke
