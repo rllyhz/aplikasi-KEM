@@ -13,7 +13,7 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
 - [x] DashboardScreen
 - [x] ReadingScreen
   - [x] ReadingFirstSectionScreen
-  - [ ] ReadingSecondSectionScreen
+  - [x] ReadingSecondSectionScreen
   - [ ] ReadingThirdSectionScreen
   - [ ] ReadingFourthSectionScreen
   - [ ] ReadingFifthSectionScreen
