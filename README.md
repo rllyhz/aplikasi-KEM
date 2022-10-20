@@ -65,8 +65,9 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
  1. [x] Space
  1. [x] NextIconButton
  1. [x] HighlightTextBox
+ 1. [ ] IndentationBox
  1. [x] LineStroke
  1. [x] ParagraphText
  1. [x] MainHeadingText
- 1. [x] SubHeadingText (bold or not) (numbering or alphabetic)
- 1. [x] ParagraphList (numbering, alphabetic or unordered list)
+ 1. [x] SubHeadingText (bold or not) (numeric or alphabetic)
+ 1. [x] ParagraphList (numeric or alphabetic)
