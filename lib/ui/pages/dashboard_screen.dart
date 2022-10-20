@@ -1,4 +1,4 @@
-import 'package:aplikasi_kem/ui/pages/reading_screen.dart';
+import 'package:aplikasi_kem/ui/pages/reading/reading_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
 import 'package:aplikasi_kem/ui/widgets/illustration_card_button.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';

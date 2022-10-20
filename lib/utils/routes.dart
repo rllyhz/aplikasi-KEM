@@ -1,6 +1,6 @@
 import 'package:aplikasi_kem/ui/pages/dashboard_screen.dart';
 import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
-import 'package:aplikasi_kem/ui/pages/reading_screen.dart';
+import 'package:aplikasi_kem/ui/pages/reading/reading_screen.dart';
 import 'package:aplikasi_kem/ui/pages/splash_screen.dart';
 import 'package:flutter/widgets.dart';
 
