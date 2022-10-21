@@ -16,6 +16,7 @@ const limeColor = Color(0xFF00AFAF);
 const darkPurpleColor = Color(0xFF1D225F);
 const lightBlueColor = Color(0xFF709CDF);
 const greenColor = Color(0xFF55B95F);
+const transparentColor = Color(0x00FFFFFF);
 
 ColorScheme getCustomColorScheme() {
   return const ColorScheme.light(
