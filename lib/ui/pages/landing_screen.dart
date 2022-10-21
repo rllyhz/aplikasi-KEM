@@ -59,6 +59,7 @@ class LandingScreen extends StatelessWidget {
                       CustomButton(
                         text: 'Yuk Mulai!',
                         textColor: colors.whiteColor,
+                        backgroundColor: colors.blueColor,
                         onPressed: () {
                           routes.replaceWith(context, DashboardScreen.route);
                         },

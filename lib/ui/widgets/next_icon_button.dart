@@ -21,24 +21,21 @@ class NextIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(borderRadiusSize ?? 32.0),
-      onTap: onIconPressed,
-      child: Padding(
-        padding: padding ?? const EdgeInsets.all(8.0),
-        child: Container(
-          padding: padding ?? const EdgeInsets.all(8.0),
-          decoration: BoxDecoration(
-            color: backgroundColor,
+    return IconButton(
+      icon: Center(
+        child: SvgPicture.asset(
+          'assets/icons/icon_arrow_right.svg',
+          width: 32.0,
+          height: 32.0,
+          color: iconColor,
+        ),
+      ),
+      onPressed: onIconPressed,
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all<Color>(backgroundColor),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadiusSize ?? 32.0),
-          ),
-          child: Center(
-            child: SvgPicture.asset(
-              'assets/icons/icon_arrow_right.svg',
-              width: 32.0,
-              height: 32.0,
-              color: iconColor,
-            ),
           ),
         ),
       ),

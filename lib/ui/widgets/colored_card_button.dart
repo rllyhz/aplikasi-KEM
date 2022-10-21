@@ -23,28 +23,25 @@ class ColoredCardButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ColoredCard(
       borderRadiusSize: 82.0,
-      padding: const EdgeInsets.all(0),
+      padding: const EdgeInsets.only(
+          top: 12.0, bottom: 12.0, left: 24.0, right: 12.0),
       backgroundColor: backgroundColor,
-      child: Padding(
-        padding: const EdgeInsets.only(
-            top: 4.0, bottom: 4.0, left: 24.0, right: 4.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              label,
-              style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                    color: textColor,
-                  ),
-            ),
-            NextIconButton(
-              onIconPressed: onIconPressed,
-              backgroundColor: colors.whiteColor,
-              iconColor: backgroundColor,
-            ),
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            label,
+            style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                  color: textColor,
+                ),
+          ),
+          NextIconButton(
+            onIconPressed: onIconPressed,
+            backgroundColor: colors.whiteColor,
+            iconColor: backgroundColor,
+          ),
+        ],
       ),
     );
   }

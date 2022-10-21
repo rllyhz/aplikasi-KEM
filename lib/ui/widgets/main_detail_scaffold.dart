@@ -1,6 +1,7 @@
 import 'package:aplikasi_kem/ui/widgets/simple_app_bar.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:flutter/material.dart';
+import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 
@@ -28,25 +29,26 @@ class MainDetailScaffold extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: colors.backgroundColor,
+      appBar: buildCustomAppBar(
+        context,
+        titleText: appBarTitleText,
+        color: appBarTitleTextColor,
+        shouldShowNavigateUp: Navigator.canPop(context),
+      ),
       body: SafeArea(
         child: Column(
           children: [
-            SimpleAppBar(
-              titleText: appBarTitleText,
-              color: appBarTitleTextColor,
-              enableNavigateUp: Navigator.canPop(context),
-            ),
             Flexible(
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: SingleChildScrollView(
-                  physics: const BouncingScrollPhysics(),
+                  physics: const ClampingScrollPhysics(),
                   child: Padding(
                     padding: const EdgeInsets.only(
                       top: sizes.detailScreenVerticalPaddingSmall,
                       bottom: sizes.detailScreenVerticalPaddingMedium,
-                      left: sizes.detailScreenHorizontalPaddingSmall,
-                      right: sizes.detailScreenHorizontalPaddingSmall,
+                      left: sizes.detailScreenHorizontalPaddingMedium,
+                      right: sizes.detailScreenHorizontalPaddingMedium,
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,

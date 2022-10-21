@@ -1,7 +1,6 @@
 import 'package:aplikasi_kem/ui/pages/splash_screen.dart';
 import 'package:aplikasi_kem/utils/routes.dart' as routes;
 import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
-import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/strings.dart' as string_resource;
 import 'package:flutter/material.dart';
 
@@ -14,8 +13,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    setStatusBarColor(colors.transparentColor);
-
     return MaterialApp(
       title: string_resource.appName,
       debugShowCheckedModeBanner: false,

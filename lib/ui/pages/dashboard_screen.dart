@@ -49,33 +49,38 @@ class DashboardScreen extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         // Greeting card
-        ColoredCard(
-          backgroundColor: colors.whiteColor,
-          elevation: 3.2,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Halo👋',
-                    style: Theme.of(context).textTheme.headline1?.copyWith(
-                          color: colors.blueColor,
-                          fontSize: 32.0,
-                        ),
-                  ),
-                  Text(
-                    'Selamat Datang',
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                          fontSize: 20.0,
-                        ),
-                  ),
-                ],
-              ),
-              SvgPicture.asset('assets/icons/icon_logo_colored.svg'),
-            ],
+        Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: sizes.detailScreenHorizontalPaddingSmall,
+          ),
+          child: ColoredCard(
+            backgroundColor: colors.whiteColor,
+            blurRadius: 12.0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Halo👋',
+                      style: Theme.of(context).textTheme.headline1?.copyWith(
+                            color: colors.blueColor,
+                            fontSize: 32.0,
+                          ),
+                    ),
+                    Text(
+                      'Selamat Datang',
+                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                            fontSize: 20.0,
+                          ),
+                    ),
+                  ],
+                ),
+                SvgPicture.asset('assets/icons/icon_logo_colored.svg'),
+              ],
+            ),
           ),
         ),
 
@@ -85,7 +90,9 @@ class DashboardScreen extends StatelessWidget {
 
         // Button Menu
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(
+            horizontal: sizes.detailScreenHorizontalPaddingMedium,
+          ),
           child: Text(
             'Hai apa yang kamu cari?',
             textAlign: TextAlign.start,
@@ -101,10 +108,12 @@ class DashboardScreen extends StatelessWidget {
         ),
 
         GridView.count(
-          padding: const EdgeInsets.all(0.0),
+          padding: const EdgeInsets.symmetric(
+            horizontal: sizes.detailScreenHorizontalPaddingSmall,
+          ),
           physics: const NeverScrollableScrollPhysics(),
           mainAxisSpacing: 12.0,
-          crossAxisSpacing: 8.0,
+          crossAxisSpacing: 12.0,
           shrinkWrap: true,
           crossAxisCount: 2,
           childAspectRatio: 2 / 2.45,

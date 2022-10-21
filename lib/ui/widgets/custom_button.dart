@@ -33,7 +33,7 @@ class CustomButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(borderRadiusSize ?? 32.0),
           ),
         ),
-        elevation: MaterialStateProperty.all<double>(8.0),
+        elevation: MaterialStateProperty.all<double>(4.0),
       ),
       child: Padding(
         padding: padding ??

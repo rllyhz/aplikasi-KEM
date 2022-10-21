@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 const backgroundColor = Color(0xFFFFFFFF);
 const greyColor = Color.fromARGB(129, 217, 217, 217);
+const boxShadowColor = Color.fromARGB(16, 78, 78, 78);
 const whiteColor = Color(0xFFFFFFFF);
 const errorColor = Colors.redAccent;
 const headingTextColor = Color(0xFF1C1C1C);
