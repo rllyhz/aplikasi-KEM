@@ -9,6 +9,8 @@ import 'package:aplikasi_kem/ui/pages/reading/reading_third_section_screen.dart'
 import 'package:aplikasi_kem/ui/pages/splash_screen.dart';
 import 'package:flutter/widgets.dart';
 
+final RouteObserver<PageRoute> routeObserver = RouteObserver();
+
 Map<String, Widget Function(BuildContext context)> build() {
   return {
     SplashScreen.route: (ctx) => const SplashScreen(),

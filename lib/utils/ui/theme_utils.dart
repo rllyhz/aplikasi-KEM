@@ -69,3 +69,11 @@ PreferredSizeWidget buildCustomAppBar(
                   ),
             ),
     );
+
+void setStatusBarColor({Color? color, Brightness? brightness}) {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: color ?? colors.transparentColor,
+    statusBarBrightness: brightness ?? Brightness.light,
+    statusBarIconBrightness: brightness ?? Brightness.light,
+  ));
+}
