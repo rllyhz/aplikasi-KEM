@@ -12,10 +12,11 @@ ThemeData getCustomThemeData() {
   );
 }
 
-void setStatusBarColor(Color color) {
+void setStatusBarColor(Color color,
+    {Brightness brightness = Brightness.light}) {
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle(
-      statusBarIconBrightness: Brightness.light,
+      statusBarIconBrightness: brightness,
       statusBarColor: color,
     ),
   );
