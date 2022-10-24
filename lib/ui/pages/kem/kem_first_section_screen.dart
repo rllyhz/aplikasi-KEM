@@ -15,7 +15,7 @@ class KEMFirstSectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GeneralScaffold(
-      appBarTitleTextColor: colors.whiteColor,
+      appBarTitleTextColor: colors.darkTextColor,
       illustrationAssetName: 'assets/images/kem/illustration_1.png',
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
