@@ -31,7 +31,7 @@ class KEMScreen extends StatelessWidget {
               routes.navigateTo(context, KEMFirstSectionScreen.route);
             },
           ),
-          const Space(size: 8.0),
+          const Space(size: 12.0),
           ColoredCardButton(
             label: 'Faktor-faktor yang mempengaruhi K.E.M',
             textColor: colors.whiteColor,
@@ -40,7 +40,7 @@ class KEMScreen extends StatelessWidget {
               routes.navigateTo(context, KEMSecondSectionScreen.route);
             },
           ),
-          const Space(size: 8.0),
+          const Space(size: 12.0),
           ColoredCardButton(
             label: 'Ringkasan',
             textColor: colors.whiteColor,
