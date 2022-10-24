@@ -103,6 +103,21 @@ flutter:
     - assets/images/reading/banner_3.png
     - assets/images/reading/banner_4.png
     - assets/images/reading/banner_5.png
+    - assets/images/kem/main_illustration.png
+    - assets/images/kem/illustration_1.png
+    - assets/images/kem/illustration_2.png
+    - assets/images/kem/illustration_3.png
+    - assets/images/kem_measurement/main_illustration.png
+    - assets/images/kem_measurement/illustration_1.png
+    - assets/images/kem_measurement/illustration_2.png
+    - assets/images/kem_measurement/illustration_3.png
+    - assets/images/kem_measurement/illustration_4.png
+    - assets/images/exercises/main_illustration.png
+    - assets/images/kem_increasement/main_illustration.png
+    - assets/images/kem_increasement/illustration_1.png
+    - assets/images/kem_increasement/illustration_2.png
+    - assets/images/kem_increasement/illustration_3.png
+    - assets/images/kem_increasement/illustration_4.png
 
   fonts:
     - family: Inter
