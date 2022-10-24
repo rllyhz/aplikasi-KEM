@@ -33,7 +33,7 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
   - [x] ExerciseFourthSectionScreen
   - [x] ExerciseFifthSectionScreen
   - [x] ExerciseSixthSectionScreen
-- [ ] KEMIncreasementScreen
+- [x] KEMIncreasementScreen
   - [ ] KEMIncreasementFirstSectionScreen
   - [ ] KEMIncreasementSecondSectionScreen
     - [ ] KEMInreasementSecondDetailOneScreen
