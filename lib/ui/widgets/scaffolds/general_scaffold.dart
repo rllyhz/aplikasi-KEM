@@ -21,7 +21,7 @@ class GeneralScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var maxWidth = MediaQuery.of(context).size.width;
-    var illustrationWidth = maxWidth * 0.85;
+    var illustrationWidth = maxWidth * 0.5;
 
     return Scaffold(
       backgroundColor: colors.backgroundColor,
@@ -54,10 +54,11 @@ class GeneralScaffold extends StatelessWidget {
                           child: Image.asset(
                             illustrationAssetName,
                             width: illustrationWidth,
+                            fit: BoxFit.contain,
                           ),
                         ),
 
-                        const Space(size: 16.0),
+                        const Space(size: 54.0),
 
                         // Content
                         SizedBox(
