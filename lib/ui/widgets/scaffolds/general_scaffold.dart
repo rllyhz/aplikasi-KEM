@@ -7,15 +7,15 @@ import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 class GeneralScaffold extends StatelessWidget {
   const GeneralScaffold({
     super.key,
+    this.appBarTitleTextColor,
     this.appBarTitleText,
-    required this.appBarTitleTextColor,
-    required this.illustrationAssetName,
+    this.illustrationAssetName,
     this.body,
   });
 
   final String? appBarTitleText;
-  final Color appBarTitleTextColor;
-  final String illustrationAssetName;
+  final Color? appBarTitleTextColor;
+  final String? illustrationAssetName;
   final Widget? body;
 
   @override
@@ -50,15 +50,19 @@ class GeneralScaffold extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         // illustration
-                        Center(
-                          child: Image.asset(
-                            illustrationAssetName,
-                            width: illustrationWidth,
-                            fit: BoxFit.contain,
-                          ),
-                        ),
+                        illustrationAssetName == null
+                            ? const Center()
+                            : Center(
+                                child: Image.asset(
+                                  illustrationAssetName!,
+                                  width: illustrationWidth,
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
 
-                        const Space(size: 54.0),
+                        illustrationAssetName == null
+                            ? const Space(size: 26.0)
+                            : const Space(size: 54.0),
 
                         // Content
                         SizedBox(
