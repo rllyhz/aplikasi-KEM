@@ -13,7 +13,7 @@ class MainHeadingText extends StatelessWidget {
     return Text(
       text,
       textAlign: textAlign,
-      style: Theme.of(context).textTheme.headline2?.copyWith(
+      style: Theme.of(context).textTheme.headline1?.copyWith(
             color: colors.darkTextColor,
             fontSize: sizes.textSizeLarge,
           ),
