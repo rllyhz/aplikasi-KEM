@@ -26,13 +26,13 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
   - [x] KEMMeasurementSecondSectionScreen
   - [x] KEMMeasurementThirdSectionScreen
   - [x] KEMMeasurementFourthSectionScreen
-- [ ] ExerciseScreen
-  - [ ] ExerciseFirstSectionScreen
-  - [ ] ExerciseSecondSectionScreen
-  - [ ] ExerciseThirdSectionScreen
-  - [ ] ExerciseFourthSectionScreen
-  - [ ] ExerciseFifthSectionScreen
-  - [ ] ExerciseSixthSectionScreen
+- [x] ExerciseScreen
+  - [x] ExerciseFirstSectionScreen
+  - [x] ExerciseSecondSectionScreen
+  - [x] ExerciseThirdSectionScreen
+  - [x] ExerciseFourthSectionScreen
+  - [x] ExerciseFifthSectionScreen
+  - [x] ExerciseSixthSectionScreen
 - [ ] KEMIncreasementScreen
   - [ ] KEMIncreasementFirstSectionScreen
   - [ ] KEMIncreasementSecondSectionScreen
