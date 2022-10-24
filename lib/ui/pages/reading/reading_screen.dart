@@ -33,7 +33,7 @@ class ReadingScreen extends StatelessWidget {
               routes.navigateTo(context, ReadingFirstSectionScreen.route);
             },
           ),
-          const Space(size: 8.0),
+          const Space(size: 12.0),
           ColoredCardButton(
             label: 'Tujuan Membaca',
             textColor: colors.whiteColor,
@@ -42,7 +42,7 @@ class ReadingScreen extends StatelessWidget {
               routes.navigateTo(context, ReadingSecondSectionScreen.route);
             },
           ),
-          const Space(size: 8.0),
+          const Space(size: 12.0),
           ColoredCardButton(
             label: 'Manfaat Membaca',
             textColor: colors.whiteColor,
@@ -51,7 +51,7 @@ class ReadingScreen extends StatelessWidget {
               routes.navigateTo(context, ReadingThirdSectionScreen.route);
             },
           ),
-          const Space(size: 8.0),
+          const Space(size: 12.0),
           ColoredCardButton(
             label: 'Aspek Membaca',
             textColor: colors.whiteColor,
@@ -60,7 +60,7 @@ class ReadingScreen extends StatelessWidget {
               routes.navigateTo(context, ReadingFourthSectionScreen.route);
             },
           ),
-          const Space(size: 8.0),
+          const Space(size: 12.0),
           ColoredCardButton(
             label: 'Ringkasan',
             textColor: colors.whiteColor,
