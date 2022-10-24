@@ -25,7 +25,7 @@ class SubHeadingText extends StatelessWidget {
     var textTheme = Theme.of(context).textTheme;
 
     var textStyle = isBold
-        ? textTheme.headline2?.copyWith(
+        ? textTheme.headline1?.copyWith(
             color: colors.darkTextColor,
             fontSize: sizes.textSizeMedium,
             height: sizes.textLineHeightParagraph,
