@@ -1,4 +1,8 @@
 import 'package:aplikasi_kem/ui/pages/dashboard_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem/kem_first_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem/kem_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem/kem_second_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem/kem_third_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_fifth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_first_section_screen.dart';
@@ -24,6 +28,10 @@ Map<String, Widget Function(BuildContext context)> build() {
     ReadingFourthSectionScreen.route: (ctx) =>
         const ReadingFourthSectionScreen(),
     ReadingFifthSectionScreen.route: (ctx) => const ReadingFifthSectionScreen(),
+    KEMScreen.route: (ctx) => const KEMScreen(),
+    KEMFirstSectionScreen.route: (ctx) => const KEMFirstSectionScreen(),
+    KEMSecondSectionScreen.route: (ctx) => const KEMSecondSectionScreen(),
+    KEMThirdSectionScreen.route: (ctx) => const KEMThirdSectionScreen(),
   };
 }
 
