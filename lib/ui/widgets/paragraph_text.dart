@@ -9,10 +9,12 @@ class ParagraphText extends StatelessWidget {
     this.textAlign = TextAlign.start,
     this.shouldShowIndentation = false,
     this.spaceCount = 2,
+    this.fontStyle,
   });
 
   final String text;
   final TextAlign? textAlign;
+  final FontStyle? fontStyle;
   final bool shouldShowIndentation;
   final int spaceCount;
 
@@ -40,6 +42,7 @@ class ParagraphText extends StatelessWidget {
             color: colors.darkTextColor,
             fontSize: sizes.textSizeMedium,
             height: sizes.textLineHeightParagraph,
+            fontStyle: fontStyle ?? FontStyle.normal,
           ),
     );
   }
