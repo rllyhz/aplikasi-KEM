@@ -1,6 +1,7 @@
 import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
 import 'package:aplikasi_kem/ui/widgets/next_icon_button.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
+import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 import 'package:flutter/material.dart';
 
 class ColoredCardButton extends StatelessWidget {
@@ -30,11 +31,15 @@ class ColoredCardButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            label,
-            style: Theme.of(context).textTheme.bodyText1?.copyWith(
-                  color: textColor,
-                ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.50,
+            child: Text(
+              label,
+              style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                    color: textColor,
+                    fontSize: sizes.textSizeMedium,
+                  ),
+            ),
           ),
           NextIconButton(
             onIconPressed: onIconPressed,
