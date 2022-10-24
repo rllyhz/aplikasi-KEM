@@ -4,12 +4,14 @@ const _upperCaseAlphabeticalNumberings = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 enum NumberingSuffix {
   dot,
   parentheses,
+  bullet,
 }
 
 enum NumberingType {
   numeric,
   lowerCaseAlphabetic,
   upperCaseAlphabetic,
+  bullet,
 }
 
 String getNumberingByIndex(int index, NumberingType numberingType) {
@@ -23,15 +25,19 @@ String getNumberingByIndex(int index, NumberingType numberingType) {
     return index >= lastIndex
         ? _upperCaseAlphabeticalNumberings[lastIndex]
         : _upperCaseAlphabeticalNumberings[index];
-  } else {
+  } else if (numberingType == NumberingType.numeric) {
     return (index + 1).toString();
+  } else {
+    return "•";
   }
 }
 
 String getNumberingSuffixOf(NumberingSuffix numberingSuffix) {
   if (numberingSuffix == NumberingSuffix.parentheses) {
     return ')';
-  } else {
+  } else if (numberingSuffix == NumberingSuffix.dot) {
     return '.';
+  } else {
+    return "";
   }
 }
