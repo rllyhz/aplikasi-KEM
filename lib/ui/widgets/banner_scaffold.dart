@@ -1,7 +1,6 @@
 import 'package:aplikasi_kem/ui/widgets/line_stroke.dart';
 import 'package:aplikasi_kem/ui/widgets/main_heading_text.dart';
 import 'package:aplikasi_kem/ui/widgets/paragraph_text.dart';
-import 'package:aplikasi_kem/ui/widgets/simple_app_bar.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
 import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:flutter/material.dart';
