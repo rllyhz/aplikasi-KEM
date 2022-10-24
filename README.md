@@ -17,10 +17,10 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
   - [x] ReadingThirdSectionScreen
   - [x] ReadingFourthSectionScreen
   - [x] ReadingFifthSectionScreen
-- [ ] KEMScreen
-  - [ ] KEMFirstSectionScreen
-  - [ ] KEMSecondSectionScreen
-  - [ ] KEMThirdSectionScreen
+- [x] KEMScreen
+  - [x] KEMFirstSectionScreen
+  - [x] KEMSecondSectionScreen
+  - [x] KEMThirdSectionScreen
 - [ ] KEMMeasurementScreen
   - [ ] KEMMeasurementFirstSectionScreen
   - [ ] KEMMeasurementSecondSectionScreen
@@ -52,8 +52,8 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
 
  1. [x] MainDetailScaffold
  2. [x] BannerScaffold
- 3. [ ] GeneralScaffold
- 4. [ ] ExerciseScaffold
+ 3. [x] GeneralScaffold
+ 4. [x] ExerciseScaffold
 
 ### Widgets
 
