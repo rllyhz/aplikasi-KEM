@@ -22,6 +22,7 @@ import 'package:aplikasi_kem/ui/pages/reading/reading_fourth_section_screen.dart
 import 'package:aplikasi_kem/ui/pages/reading/reading_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_second_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_third_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/result/result_screen.dart';
 import 'package:aplikasi_kem/ui/pages/splash_screen.dart';
 import 'package:flutter/widgets.dart';
 
@@ -66,6 +67,8 @@ Map<String, Widget Function(BuildContext context)> build() {
         const ExerciseFifthSectionScreen(),
     ExerciseSixthSectionScreen.route: (ctx) =>
         const ExerciseSixthSectionScreen(),
+    // here kem increment
+    ResultScreen.route: (ctx) => const ResultScreen(),
   };
 }
 

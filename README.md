@@ -47,6 +47,7 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
     - [ ] KEMInreasementFourthDetailOneScreen
     - [ ] KEMInreasementFourthDetailTwoScreen
     - [ ] KEMInreasementFourthDetailThreeScree
+- [x] ResultScreen
 
 ### Scaffold Widgets
 
