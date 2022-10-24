@@ -10,6 +10,7 @@ import 'package:aplikasi_kem/ui/pages/kem/kem_first_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_second_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_third_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/kem_increasement_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_first_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_fourth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_screen.dart';
@@ -67,7 +68,7 @@ Map<String, Widget Function(BuildContext context)> build() {
         const ExerciseFifthSectionScreen(),
     ExerciseSixthSectionScreen.route: (ctx) =>
         const ExerciseSixthSectionScreen(),
-    // here kem increment
+    KEMIncreasementScreen.route: (ctx) => const KEMIncreasementScreen(),
     ResultScreen.route: (ctx) => const ResultScreen(),
   };
 }
