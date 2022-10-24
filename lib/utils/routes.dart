@@ -3,6 +3,11 @@ import 'package:aplikasi_kem/ui/pages/kem/kem_first_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_second_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_third_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_first_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_fourth_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_second_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_third_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_fifth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_first_section_screen.dart';
@@ -32,6 +37,15 @@ Map<String, Widget Function(BuildContext context)> build() {
     KEMFirstSectionScreen.route: (ctx) => const KEMFirstSectionScreen(),
     KEMSecondSectionScreen.route: (ctx) => const KEMSecondSectionScreen(),
     KEMThirdSectionScreen.route: (ctx) => const KEMThirdSectionScreen(),
+    KEMMeasurementScreen.route: (ctx) => const KEMMeasurementScreen(),
+    KEMMeasurementFirstSectionScreen.route: (ctx) =>
+        const KEMMeasurementFirstSectionScreen(),
+    KEMMeasurementSecondSectionScreen.route: (ctx) =>
+        const KEMMeasurementSecondSectionScreen(),
+    KEMMeasurementThirdSectionScreen.route: (ctx) =>
+        const KEMMeasurementThirdSectionScreen(),
+    KEMMeasurementFourthSectionScreen.route: (ctx) =>
+        const KEMMeasurementFourthSectionScreen(),
   };
 }
 
