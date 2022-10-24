@@ -11,6 +11,8 @@ class IndentationBox extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(left: size * 4),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: children,
       ),
     );
