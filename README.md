@@ -21,11 +21,11 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
   - [x] KEMFirstSectionScreen
   - [x] KEMSecondSectionScreen
   - [x] KEMThirdSectionScreen
-- [ ] KEMMeasurementScreen
-  - [ ] KEMMeasurementFirstSectionScreen
-  - [ ] KEMMeasurementSecondSectionScreen
-  - [ ] KEMMeasurementThirdSectionScreen
-  - [ ] KEMMeasurementFourthSectionScreen
+- [x] KEMMeasurementScreen
+  - [x] KEMMeasurementFirstSectionScreen
+  - [x] KEMMeasurementSecondSectionScreen
+  - [x] KEMMeasurementThirdSectionScreen
+  - [x] KEMMeasurementFourthSectionScreen
 - [ ] ExerciseScreen
   - [ ] ExerciseFirstSectionScreen
   - [ ] ExerciseSecondSectionScreen
