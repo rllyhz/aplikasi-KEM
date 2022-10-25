@@ -27,6 +27,7 @@ PreferredSizeWidget buildCustomAppBar(
   Color? statusBarColor,
   Brightness? statusBarBrightness,
   Brightness? statusBarIconBrightness,
+  Function()? onNavigateUp,
 }) =>
     AppBar(
       systemOverlayStyle: SystemUiOverlayStyle(
@@ -47,7 +48,7 @@ PreferredSizeWidget buildCustomAppBar(
       leading: !shouldShowNavigateUp
           ? null
           : IconButton(
-              onPressed: () => routes.navigateUp(context),
+              onPressed: () => onNavigateUp ?? routes.navigateUp(context),
               icon: leading ??
                   SvgPicture.asset(
                     'assets/icons/icon_navigate_up.svg',
