@@ -1,7 +1,11 @@
+import 'package:aplikasi_kem/ui/widgets/highlight_text_box.dart';
+import 'package:aplikasi_kem/ui/widgets/indentation_box.dart';
+import 'package:aplikasi_kem/ui/widgets/main_heading_text.dart';
 import 'package:aplikasi_kem/ui/widgets/paragraph_list.dart';
 import 'package:aplikasi_kem/ui/widgets/paragraph_text.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/general_scaffold.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/sub_heading_text.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/ui/text_numbering_helpers.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
@@ -20,31 +24,126 @@ class KEMMeasurementFourthSectionScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          ParagraphText(
-            text:
-                'KEM merupakan perpaduan antara kecepatan baca dan pemahaman isi bacaan. Berdasarkan hal itu, pengukuran KEM dilakukan mencari atau menentukan kecepatan baca pembaca, menentukan pemahaman isi bacaan, dan memadukan kedua unsur tersebut. Data pemahaman isi bacaan di peroleh dengan melakukan pengukuran dengan alat pengukuran. Pembaca di tes dengan tes pemahaman, yaitu pembaca diminta menjawab sejumlah pertanyaan dan di nilai.',
-            shouldShowIndentation: true,
-            spaceCount: 3,
+        children: [
+          const MainHeadingText(
+            text: 'Ringkasan',
           ),
-          Space(size: sizes.paragraphNewLineSmall),
-          ParagraphText(
-            text:
-                'Pengukuran perlu melakukan persiapan terlebih dahulu untuk sampai pada penggunaan rumus penghitungan KEM. Persiapan yang di lakukan antara lain adalah mempersiapkan alat pengukuran KEM tersebut, antara lain:',
-            shouldShowIndentation: true,
-            spaceCount: 3,
+          const Space(
+            size: sizes.paragraphNewLineLarge,
           ),
-          Space(size: sizes.paragraphNewLineSmall),
-          ParagraphList(
-            numberingType: NumberingType.numeric,
+          const Space(
+            size: sizes.paragraphNewLineLarge,
+          ),
+
+          // a
+          const SubHeadingText(
+            text: 'Alat Pengukuran KEM',
+            isNumbering: true,
+            numberingValue: 'a',
             numberingSuffix: NumberingSuffix.parentheses,
-            list: [
-              'Menyediakan teks atau wacana sebagai bahan bacaan. Bacaan yang disiapkan perlu mempertimbangkan aspek panjang bacaan dan tingkat kesulitan bacaan.',
-              'Menyiapkan alat pengukuran waktu seperti jam tangan atau stopwatch.',
-              'Menyiapkan tes pemahaman isi bacaan. Tes yang dibuat berdasarkan pertimbangan tujuan membaca dan tujuan pembelajaran.',
+          ),
+          const Space(
+            size: sizes.paragraphNewLineSmall,
+          ),
+          const ParagraphText(
+            text:
+                'Pengukuran KEM perlu persiapan terlebih dahulu untuk sampai pada penggunaan rumus penghitungan KEM. Persiapan yang di lakukan antara lain adalah mempersiapkan alat pengukuran KEM tersebut, antara lain:',
+            shouldShowIndentation: true,
+            spaceCount: 3,
+          ),
+          const Space(
+            size: sizes.paragraphNewLineSmall,
+          ),
+          const IndentationBox(
+            size: 1.0,
+            children: [
+              ParagraphList(
+                list: [
+                  'Menyediakan teks atau wacana sebagai bahan bacaan. Bacaan yang disiapkan perlu mempertimbangkan aspek panjang bacaan dan tingkat kesulitan bacaan.',
+                  'Menyiapkan alat pengukuran waktu seperti jam tangan atau stopwatch.',
+                  'Menyiapkan tes pemahaman isi bacaan. Tes yang dibuat berdasarkan pertimbangan tujuan membaca dan tujuan pembelajaran.',
+                ],
+              ),
             ],
           ),
-          Space(size: sizes.paragraphNewLineLarge),
+
+          // b
+          const Space(size: sizes.paragraphNewLineMedium),
+
+          const SubHeadingText(
+            text: 'Cara Mengukur KEM',
+            isNumbering: true,
+            numberingValue: 'b',
+            numberingSuffix: NumberingSuffix.parentheses,
+          ),
+          const Space(
+            size: sizes.paragraphNewLineSmall,
+          ),
+          HighlightTextBox(
+            backgroundColor: colors.greyColor,
+            child: Image.asset(
+              'assets/images/kem_measurement/formula.png',
+              fit: BoxFit.fitWidth,
+            ),
+          ),
+          const Space(size: sizes.paragraphNewLineSmall),
+          const ParagraphText(
+            text: 'K       : jumlah kata yang di baca',
+          ),
+          const ParagraphText(
+            text: 'Wm   : waktu tempuh baca dalam satuan menit',
+          ),
+          const ParagraphText(
+            text: 'Wd    : waktu tempuh baca dalam satuan detik',
+          ),
+          const ParagraphText(
+            text: 'B       : skor bobot tes',
+          ),
+          const ParagraphText(
+            text: 'SI      : skor ideal',
+          ),
+          const ParagraphText(
+            text: 'Kpm  : kata per menit',
+          ),
+
+          // c
+          const Space(size: sizes.paragraphNewLineMedium),
+
+          const SubHeadingText(
+            text: 'Standarisasi KEM',
+            isNumbering: true,
+            numberingValue: 'c',
+            numberingSuffix: NumberingSuffix.parentheses,
+          ),
+          const Space(
+            size: sizes.paragraphNewLineSmall,
+          ),
+          const ParagraphText(
+            text:
+                'Standarisasi kecepatan efektif membaca untuk masing-masing jenjang pendidikan adalah sebagai berikut:',
+            shouldShowIndentation: true,
+            spaceCount: 3,
+          ),
+          const Space(
+            size: sizes.paragraphNewLineSmall,
+          ),
+          const HighlightTextBox(
+            backgroundColor: colors.greyColor,
+            child: ParagraphList(
+              numberingType: NumberingType.bullet,
+              numberingSuffix: NumberingSuffix.bullet,
+              list: [
+                'SD atau SMP	: 200 kata/menit',
+                'SMTA		: 250 kata/menit',
+                'Mahasiswa	: 325 kata/menit',
+                'Pascasarjana	: 400 kata/menit',
+                'Orang dewasa	: 200 kata/menit',
+              ],
+            ),
+          ),
+
+          //
+          const Space(size: sizes.paragraphNewLineLarge),
         ],
       ),
     );
