@@ -48,7 +48,13 @@ PreferredSizeWidget buildCustomAppBar(
       leading: !shouldShowNavigateUp
           ? null
           : IconButton(
-              onPressed: () => onNavigateUp ?? routes.navigateUp(context),
+              onPressed: onNavigateUp == null
+                  ? () {
+                      routes.navigateUp(context);
+                    }
+                  : () {
+                      onNavigateUp();
+                    },
               icon: leading ??
                   SvgPicture.asset(
                     'assets/icons/icon_navigate_up.svg',
