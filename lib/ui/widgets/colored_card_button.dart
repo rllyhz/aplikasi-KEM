@@ -10,6 +10,7 @@ class ColoredCardButton extends StatelessWidget {
     required this.backgroundColor,
     required this.textColor,
     required this.label,
+    this.labelWidthInPercentage = 0.5,
     this.child,
     this.onIconPressed,
   });
@@ -17,6 +18,7 @@ class ColoredCardButton extends StatelessWidget {
   final Color backgroundColor;
   final Color textColor;
   final String label;
+  final double labelWidthInPercentage;
   final Widget? child;
   final Function()? onIconPressed;
 
@@ -32,7 +34,7 @@ class ColoredCardButton extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
-            width: MediaQuery.of(context).size.width * 0.50,
+            width: MediaQuery.of(context).size.width * labelWidthInPercentage,
             child: Text(
               label,
               style: Theme.of(context).textTheme.bodyText1?.copyWith(
