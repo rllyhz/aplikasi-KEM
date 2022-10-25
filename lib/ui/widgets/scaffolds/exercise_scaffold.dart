@@ -35,20 +35,18 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
     _shouldPause = false;
     _doesTimerStart = true;
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (_shouldPause) {
-        _timer?.cancel();
-      } else {
-        setState(() {
-          _counterInSeconds += 1;
-        });
-      }
+      setState(() {
+        _counterInSeconds += 1;
+      });
     });
   }
 
   void _pauseTimer() {
-    _shouldPause = true;
+    _timer?.cancel();
+    _timer = null;
 
     setState(() {
+      _shouldPause = true;
       _doesTimerStart = false;
     });
   }
