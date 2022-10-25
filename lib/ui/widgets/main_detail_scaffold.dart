@@ -10,6 +10,8 @@ class MainDetailScaffold extends StatelessWidget {
     this.appBarTitleText,
     required this.appBarTitleTextColor,
     this.illustrationAssetName,
+    this.illustrationWidthInPercentage = 0.8,
+    this.taglineWidthInPercentage = 0.8,
     this.body,
     this.tagline,
   });
@@ -17,14 +19,16 @@ class MainDetailScaffold extends StatelessWidget {
   final String? appBarTitleText;
   final Color appBarTitleTextColor;
   final String? illustrationAssetName;
+  final double illustrationWidthInPercentage;
   final String? tagline;
+  final double taglineWidthInPercentage;
   final Widget? body;
 
   @override
   Widget build(BuildContext context) {
     var maxWidth = MediaQuery.of(context).size.width;
-    var illustrationWidth = maxWidth * 80 / 100;
-    var taglineMaxWidth = maxWidth * 75 / 100;
+    var illustrationWidth = maxWidth * illustrationWidthInPercentage;
+    var taglineMaxWidth = maxWidth * taglineWidthInPercentage;
 
     return Scaffold(
       backgroundColor: colors.backgroundColor,
@@ -64,7 +68,7 @@ class MainDetailScaffold extends StatelessWidget {
                                 ),
                         ),
 
-                        const Space(size: 8.0),
+                        const Space(size: 18.0),
 
                         // Tagline
                         Center(
@@ -86,7 +90,7 @@ class MainDetailScaffold extends StatelessWidget {
                                 ),
                         ),
 
-                        const Space(size: 32.0),
+                        const Space(size: 46.0),
 
                         SizedBox(
                           width: maxWidth,
