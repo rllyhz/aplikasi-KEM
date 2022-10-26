@@ -14,8 +14,8 @@ class ResultScreen extends StatelessWidget {
     return MainDetailScaffold(
       appBarTitleText: 'Hasil',
       appBarTitleTextColor: colors.darkTextColor,
-      illustrationAssetName:
-          'assets/images/kem_increasement/main_illustration.png',
+      illustrationAssetName: 'assets/images/result/main_illustration.png',
+      illustrationWidthInPercentage: 0.54,
       tagline:
           'Sedikit kemajuan setiap hari di dalam dirimu menambah sesuatu hingga hasil yang besar',
       body: Column(
