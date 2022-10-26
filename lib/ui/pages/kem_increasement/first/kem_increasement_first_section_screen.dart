@@ -55,7 +55,7 @@ class KEMIncreasementFirstSectionScreen extends StatelessWidget {
               'Pembaca selalu membaca pada berbagai jenis bacaan dengan motivasi yang kuat.',
             ],
           ),
-          Space(size: sizes.paragraphNewLineSmall),
+          Space(size: sizes.paragraphNewLineMedium),
           ParagraphText(
             text:
                 'Agar KEM meningkat, pembaca perlu melakukan kegiatan membaca sesuai saran berikut ini.',
@@ -75,7 +75,7 @@ class KEMIncreasementFirstSectionScreen extends StatelessWidget {
               'Pembaca hendaknya menggerakkan mata dari atas ke bawah jika bacaannya dalam bentuk kolom-kolom.',
             ],
           ),
-          Space(size: sizes.paragraphNewLineSmall),
+          Space(size: sizes.paragraphNewLineMedium),
           ParagraphText(
             text:
                 'Pembaca yang ingin KEM-nya meningkat maka mereka perlu menyingkirkan hambatan dalam membaca cepat. Hambatan-hambatan dalam membaca cepat adalah berikut ini.',
