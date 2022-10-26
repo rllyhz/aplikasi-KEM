@@ -10,7 +10,20 @@ import 'package:aplikasi_kem/ui/pages/kem/kem_first_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_second_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem/kem_third_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/first/kem_increasement_first_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_detail_one_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_detail_three_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_detail_two_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_increasement/kem_increasement_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/second/kem_increasement_second_detail_four_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/second/kem_increasement_second_detail_one_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/second/kem_increasement_second_detail_three_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/second/kem_increasement_second_detail_two_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/second/kem_increasement_second_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/third/kem_increasement_third_detail_one_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/third/kem_increasement_third_detail_two_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/third/kem_increasement_third_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_first_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_fourth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_screen.dart';
@@ -31,9 +44,16 @@ final RouteObserver<PageRoute> routeObserver = RouteObserver();
 
 Map<String, Widget Function(BuildContext context)> build() {
   return {
+    // Splash
     SplashScreen.route: (ctx) => const SplashScreen(),
+
+    // Landing
     LandingScreen.route: (ctx) => const LandingScreen(),
+
+    // Dashboard
     DashboardScreen.route: (ctx) => const DashboardScreen(),
+
+    // Reading section
     ReadingScreen.route: (ctx) => const ReadingScreen(),
     ReadingFirstSectionScreen.route: (ctx) => const ReadingFirstSectionScreen(),
     ReadingSecondSectionScreen.route: (ctx) =>
@@ -42,10 +62,14 @@ Map<String, Widget Function(BuildContext context)> build() {
     ReadingFourthSectionScreen.route: (ctx) =>
         const ReadingFourthSectionScreen(),
     ReadingFifthSectionScreen.route: (ctx) => const ReadingFifthSectionScreen(),
+
+    // KEM section
     KEMScreen.route: (ctx) => const KEMScreen(),
     KEMFirstSectionScreen.route: (ctx) => const KEMFirstSectionScreen(),
     KEMSecondSectionScreen.route: (ctx) => const KEMSecondSectionScreen(),
     KEMThirdSectionScreen.route: (ctx) => const KEMThirdSectionScreen(),
+
+    // KEM Measurement section
     KEMMeasurementScreen.route: (ctx) => const KEMMeasurementScreen(),
     KEMMeasurementFirstSectionScreen.route: (ctx) =>
         const KEMMeasurementFirstSectionScreen(),
@@ -55,6 +79,8 @@ Map<String, Widget Function(BuildContext context)> build() {
         const KEMMeasurementThirdSectionScreen(),
     KEMMeasurementFourthSectionScreen.route: (ctx) =>
         const KEMMeasurementFourthSectionScreen(),
+
+    // Exercise section
     ExerciseScreen.route: (ctx) => const ExerciseScreen(),
     ExerciseFirstSectionScreen.route: (ctx) =>
         const ExerciseFirstSectionScreen(),
@@ -68,7 +94,40 @@ Map<String, Widget Function(BuildContext context)> build() {
         const ExerciseFifthSectionScreen(),
     ExerciseSixthSectionScreen.route: (ctx) =>
         const ExerciseSixthSectionScreen(),
+
+    // KEM Increasement section
     KEMIncreasementScreen.route: (ctx) => const KEMIncreasementScreen(),
+    KEMIncreasementFirstSectionScreen.route: (ctx) =>
+        const KEMIncreasementFirstSectionScreen(),
+    // KEM Increasement Second section
+    KEMIncreasementSecondSectionScreen.route: (ctx) =>
+        const KEMIncreasementSecondSectionScreen(),
+    KEMIncreasementSecondDetailOneScreen.route: (ctx) =>
+        const KEMIncreasementSecondDetailOneScreen(),
+    KEMIncreasementSecondDetailTwoScreen.route: (ctx) =>
+        const KEMIncreasementSecondDetailTwoScreen(),
+    KEMIncreasementSecondDetailThreeScreen.route: (ctx) =>
+        const KEMIncreasementSecondDetailThreeScreen(),
+    KEMIncreasementSecondDetailFourScreen.route: (ctx) =>
+        const KEMIncreasementSecondDetailFourScreen(),
+    // KEM Increasement Third section
+    KEMIncreasementThirdSectionScreen.route: (ctx) =>
+        const KEMIncreasementThirdSectionScreen(),
+    KEMIncreasementThirdDetailOneScreen.route: (ctx) =>
+        const KEMIncreasementThirdDetailOneScreen(),
+    KEMIncreasementThirdDetailTwoScreen.route: (ctx) =>
+        const KEMIncreasementThirdDetailTwoScreen(),
+    // KEM Increasement Fourth section
+    KEMIncreasementFourthSectionScreen.route: (ctx) =>
+        const KEMIncreasementFourthSectionScreen(),
+    KEMIncreasementFourthDetailOneScreen.route: (ctx) =>
+        const KEMIncreasementFourthDetailOneScreen(),
+    KEMIncreasementFourthDetailTwoScreen.route: (ctx) =>
+        const KEMIncreasementFourthDetailTwoScreen(),
+    KEMIncreasementFourthDetailThreeScreen.route: (ctx) =>
+        const KEMIncreasementFourthDetailThreeScreen(),
+
+    // Result section
     ResultScreen.route: (ctx) => const ResultScreen(),
   };
 }
