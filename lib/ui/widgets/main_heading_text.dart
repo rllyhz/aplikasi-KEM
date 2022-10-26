@@ -3,10 +3,14 @@ import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 
 class MainHeadingText extends StatelessWidget {
-  const MainHeadingText({super.key, required this.text, this.textAlign});
+  const MainHeadingText({
+    super.key,
+    required this.text,
+    this.textAlign = TextAlign.justify,
+  });
 
   final String text;
-  final TextAlign? textAlign;
+  final TextAlign textAlign;
 
   @override
   Widget build(BuildContext context) {

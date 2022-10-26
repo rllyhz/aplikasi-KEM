@@ -8,6 +8,7 @@ class SubHeadingText extends StatelessWidget {
   const SubHeadingText({
     super.key,
     required this.text,
+    this.textAlign = TextAlign.justify,
     this.isBold = true,
     this.isNumbering = false,
     this.numberingValue,
@@ -15,6 +16,7 @@ class SubHeadingText extends StatelessWidget {
   });
 
   final String text;
+  final TextAlign textAlign;
   final bool isBold;
   final bool isNumbering;
   final String? numberingValue;
@@ -50,6 +52,7 @@ class SubHeadingText extends StatelessWidget {
             child: Text(
               text,
               style: textStyle,
+              textAlign: textAlign,
             ),
           ),
         ],
