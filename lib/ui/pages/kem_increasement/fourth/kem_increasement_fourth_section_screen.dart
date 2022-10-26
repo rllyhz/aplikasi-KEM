@@ -74,9 +74,15 @@ class KEMIncreasementFourthSectionScreen extends StatelessWidget {
             IconButton(
               padding: const EdgeInsets.all(12.0),
               onPressed: onIconPressed,
-              icon: SvgPicture.asset(
-                'assets/icons/icon_arrow_right_simple.svg',
-                color: colors.darkTextColor,
+              icon: Center(
+                child: SvgPicture.asset(
+                  'assets/icons/icon_arrow_right_simple.svg',
+                  theme: const SvgTheme(
+                    fontSize: sizes.textSizeMedium,
+                  ),
+                  color: colors.darkTextColor,
+                  fit: BoxFit.cover,
+                ),
               ),
               color: colors.darkTextColor,
             ),
