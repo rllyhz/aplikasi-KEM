@@ -6,7 +6,7 @@ class ParagraphText extends StatelessWidget {
   const ParagraphText({
     super.key,
     required this.text,
-    this.textAlign = TextAlign.start,
+    this.textAlign = TextAlign.justify,
     this.shouldShowIndentation = false,
     this.spaceCount = 2,
     this.fontStyle,
