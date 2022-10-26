@@ -34,19 +34,19 @@ Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca
   - [x] ExerciseFifthSectionScreen
   - [x] ExerciseSixthSectionScreen
 - [x] KEMIncreasementScreen
-  - [ ] KEMIncreasementFirstSectionScreen
-  - [ ] KEMIncreasementSecondSectionScreen
-    - [ ] KEMInreasementSecondDetailOneScreen
-    - [ ] KEMInreasementSecondDetailTwoScreen
-    - [ ] KEMInreasementSecondDetailThreeScreen
-    - [ ] KEMInreasementSecondDetailFourScreen
-  - [ ] KEMIncreasementThirdSectionScreen
-    - [ ] KEMInreasementThirdDetailOneScreen
-    - [ ] KEMInreasementThirdDetailTwoScreen
-  - [ ] KEMIncreasementFourthSectionScreen
-    - [ ] KEMInreasementFourthDetailOneScreen
-    - [ ] KEMInreasementFourthDetailTwoScreen
-    - [ ] KEMInreasementFourthDetailThreeScree
+  - [x] KEMIncreasementFirstSectionScreen
+  - [x] KEMIncreasementSecondSectionScreen
+    - [x] KEMInreasementSecondDetailOneScreen
+    - [x] KEMInreasementSecondDetailTwoScreen
+    - [x] KEMInreasementSecondDetailThreeScreen
+    - [x] KEMInreasementSecondDetailFourScreen
+  - [x] KEMIncreasementThirdSectionScreen
+    - [x] KEMInreasementThirdDetailOneScreen
+    - [x] KEMInreasementThirdDetailTwoScreen
+  - [x] KEMIncreasementFourthSectionScreen
+    - [x] KEMInreasementFourthDetailOneScreen
+    - [x] KEMInreasementFourthDetailTwoScreen
+    - [x] KEMInreasementFourthDetailThreeScree
 - [x] ResultScreen
 
 ### Scaffold Widgets
