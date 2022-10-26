@@ -11,7 +11,6 @@ class ColoredCardButton extends StatelessWidget {
     required this.textColor,
     required this.label,
     this.labelWidthInPercentage = 0.5,
-    this.child,
     this.onIconPressed,
   });
 
@@ -19,7 +18,6 @@ class ColoredCardButton extends StatelessWidget {
   final Color textColor;
   final String label;
   final double labelWidthInPercentage;
-  final Widget? child;
   final Function()? onIconPressed;
 
   @override
