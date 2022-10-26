@@ -61,8 +61,12 @@ class KEMMeasurementSecondSectionScreen extends StatelessWidget {
           //
           const Space(size: sizes.paragraphNewLineMedium),
           const ParagraphText(
-              text:
-                  'Berdasarkan 3 rumus yang telah ada, rumus pertama merupakan rumus yang paling mudah dan paling sering di gunakan dalam perhitungan KEM. Untuk memudahkan proses pengukuran/penghitungan KEM, ikutilah prosedur kerja di bawah ini.'),
+            text:
+                'Berdasarkan 3 rumus yang telah ada, rumus pertama merupakan rumus yang paling mudah dan paling sering di gunakan dalam perhitungan KEM. Untuk memudahkan proses pengukuran/penghitungan KEM, ikutilah prosedur kerja di bawah ini.',
+            shouldShowIndentation: true,
+            spaceCount: 3,
+          ),
+          const Space(size: sizes.paragraphNewLineSmall),
           const SubHeadingText(
             text:
                 'Tandailah bacaan anda/pembaca, di mana anda/pembaca memulai bacaan dan di mana pula berakhirnya, kemudian hitunglah jumlah kata yang telah (berhasil) anda baca itu dengan cara:',
@@ -70,6 +74,7 @@ class KEMMeasurementSecondSectionScreen extends StatelessWidget {
             isNumbering: true,
             numberingValue: 'a',
           ),
+          const Space(size: sizes.paragraphNewLineSmall),
           const ParagraphList(
             padding: EdgeInsets.only(left: 24.0),
             numberingSuffix: NumberingSuffix.parentheses,
@@ -83,7 +88,7 @@ class KEMMeasurementSecondSectionScreen extends StatelessWidget {
           ),
           const Space(size: 4.0),
           const IndentationBox(
-            size: 7.0,
+            size: 6.5,
             children: [
               ParagraphText(text: 'Contoh:'),
               ParagraphText(text: 'Jumlah kata per baris = 11'),
@@ -105,6 +110,7 @@ class KEMMeasurementSecondSectionScreen extends StatelessWidget {
             isNumbering: true,
             numberingValue: 'b',
           ),
+          const Space(size: sizes.paragraphNewLineSmall),
           const IndentationBox(
             size: 7.0,
             children: [
@@ -128,8 +134,9 @@ class KEMMeasurementSecondSectionScreen extends StatelessWidget {
             isNumbering: true,
             numberingValue: 'c',
           ),
+          const Space(size: sizes.paragraphNewLineSmall),
           const IndentationBox(
-            size: 6.2,
+            size: 5.5,
             children: [
               ParagraphText(
                 text: '*) Menggunakan rumus (1)',
@@ -151,8 +158,9 @@ class KEMMeasurementSecondSectionScreen extends StatelessWidget {
             isNumbering: true,
             numberingValue: 'd',
           ),
+          const Space(size: sizes.paragraphNewLineSmall),
           const IndentationBox(
-            size: 6.2,
+            size: 5.8,
             children: [
               ParagraphText(
                 text: 'Maka: 15 x 5 = 75',
@@ -165,17 +173,18 @@ class KEMMeasurementSecondSectionScreen extends StatelessWidget {
           const Space(size: sizes.paragraphNewLineMedium),
           const SubHeadingText(
             text:
-                'Tentukan KEM-nya dengan jalan memperkalikan hasil langkah (c) (rata-rata kecepatan baca) dengan hasil langkah (d) (pemahaman isi bacaan).',
+                'Tentukan KEM-nya dengan cara memperkalikan hasil langkah (c) (rata-rata kecepatan baca) dengan hasil langkah (d) (pemahaman isi bacaan).',
             isBold: false,
             isNumbering: true,
             numberingValue: 'e',
           ),
           const IndentationBox(
-            size: 6.2,
+            size: 5.5,
             children: [
               ParagraphText(
                   text:
                       'Untuk contoh data di atas, penghitungan KEM-nya tampak seperti berikut ini.'),
+              Space(size: sizes.paragraphNewLineSmall),
               ParagraphText(
                 text: '(a) dengan rumus (1):',
                 fontStyle: FontStyle.italic,
