@@ -27,12 +27,10 @@ class ExerciseScaffold extends StatefulWidget {
 class _ExerciseScaffoldState extends State<ExerciseScaffold> {
   int _counterInSeconds = 0;
   bool _doesTimerStart = false;
-  bool _shouldPause = false;
 
   Timer? _timer;
 
   void _startTimer() {
-    _shouldPause = false;
     _doesTimerStart = true;
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
@@ -46,7 +44,6 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
     _timer = null;
 
     setState(() {
-      _shouldPause = true;
       _doesTimerStart = false;
     });
   }
@@ -56,7 +53,6 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
     _timer = null;
 
     setState(() {
-      _shouldPause = false;
       _counterInSeconds = 0;
       _doesTimerStart = false;
     });
@@ -123,6 +119,8 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
                             child: Padding(
                               padding: const EdgeInsets.only(bottom: 24.0),
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: widget.exerciseContents,
                               ),
                             ),
