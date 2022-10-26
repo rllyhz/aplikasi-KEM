@@ -66,7 +66,7 @@ class ExerciseFirstSectionScreen extends StatelessWidget {
           const Space(size: 12.0),
           ColoredCardButton(
             backgroundColor: colors.lightBlueColor,
-            label: 'Teks Negosiasi',
+            label: 'Teks Biografi',
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(context, ExerciseSixthSectionScreen.route);
