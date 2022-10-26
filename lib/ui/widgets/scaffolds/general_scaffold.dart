@@ -10,18 +10,20 @@ class GeneralScaffold extends StatelessWidget {
     this.appBarTitleTextColor,
     this.appBarTitleText,
     this.illustrationAssetName,
+    this.illustrationWidthInPercentage = 0.5,
     this.body,
   });
 
   final String? appBarTitleText;
   final Color? appBarTitleTextColor;
   final String? illustrationAssetName;
+  final double illustrationWidthInPercentage;
   final Widget? body;
 
   @override
   Widget build(BuildContext context) {
     var maxWidth = MediaQuery.of(context).size.width;
-    var illustrationWidth = maxWidth * 0.5;
+    var illustrationWidth = maxWidth * illustrationWidthInPercentage;
 
     return Scaffold(
       backgroundColor: colors.backgroundColor,
