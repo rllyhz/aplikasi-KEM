@@ -72,7 +72,7 @@ PreferredSizeWidget buildCustomAppBar(
               titleText,
               style: Theme.of(context).textTheme.headline2?.copyWith(
                     color: color ?? colors.darkTextColor,
-                    fontSize: 20.0,
+                    fontSize: 19.0,
                   ),
             ),
     );
