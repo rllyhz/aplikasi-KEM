@@ -1,4 +1,9 @@
+import 'package:aplikasi_kem/ui/pages/exercises/exercise_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem/kem_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_increasement/kem_increasement_screen.dart';
+import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_screen.dart';
+import 'package:aplikasi_kem/ui/pages/result/result_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
 import 'package:aplikasi_kem/ui/widgets/illustration_card_button.dart';
 import 'package:aplikasi_kem/ui/widgets/space.dart';
@@ -137,7 +142,9 @@ class DashboardScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: 18.0, right: 18.0, top: 12.0, bottom: 0),
               textColor: colors.whiteColor,
-              onIconPressed: () {},
+              onIconPressed: () {
+                routes.navigateTo(context, KEMScreen.route);
+              },
             ),
             IllustrationCardButton(
               text: 'Pengukuran K.E.M',
@@ -146,7 +153,9 @@ class DashboardScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: 18.0, right: 18.0, top: 12.0, bottom: 0),
               textColor: colors.whiteColor,
-              onIconPressed: () {},
+              onIconPressed: () {
+                routes.navigateTo(context, KEMMeasurementScreen.route);
+              },
             ),
             IllustrationCardButton(
               text: 'Latihan',
@@ -156,7 +165,9 @@ class DashboardScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: 18.0, right: 18.0, top: 12.0, bottom: 0),
               textColor: colors.whiteColor,
-              onIconPressed: () {},
+              onIconPressed: () {
+                routes.navigateTo(context, ExerciseScreen.route);
+              },
             ),
             IllustrationCardButton(
               text: 'Peningkatan K.E.M',
@@ -166,7 +177,9 @@ class DashboardScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: 18.0, right: 18.0, top: 12.0, bottom: 0),
               textColor: colors.whiteColor,
-              onIconPressed: () {},
+              onIconPressed: () {
+                routes.navigateTo(context, KEMIncreasementScreen.route);
+              },
             ),
             IllustrationCardButton(
               text: 'Hasil',
@@ -175,7 +188,9 @@ class DashboardScreen extends StatelessWidget {
               padding: const EdgeInsets.only(
                   left: 18.0, right: 18.0, top: 12.0, bottom: 0),
               textColor: colors.whiteColor,
-              onIconPressed: () {},
+              onIconPressed: () {
+                routes.navigateTo(context, ResultScreen.route);
+              },
             ),
           ],
         ),
