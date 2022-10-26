@@ -27,6 +27,8 @@ class ReadingFirstSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Menurut Kamus Besar Bahasa Indonesia (KBBI) membaca adalah melihat serta memahami isi dari apa yang tertulis (dengan melisankan atau hanya dalam hati). Menurut Harimurti Kridalaksana (2008) membaca adalah menggali informasi dari teks, baik dari yang berupa tulisan maupun dari gambar atau diagram, maupun kombinasi itu semua. Membaca adalah keterampilan mengenal dan memahami bahasa tulisan dalam bentuk urutan lambing-lambang grafis dan perubahanya menjadi wacara bermakna dalam bentuk pemahaman diam-diam atau pengujaran keras-keras (Kridalaksana, 2008).',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
           Space(
             size: sizes.paragraphNewLineMedium,
@@ -34,6 +36,8 @@ class ReadingFirstSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Membaca secara umum dapat di artikan sebagai sebagai proses pengenalan dan penyandian kembali dan pemahaman simbol tertulis kemudian memberikan reaksi kritis terhadap bacaan dan mampu berpikir secara kreatif berdasarkan hasil bacaan yang kepentingan sehari-hari.',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
 
           Space(

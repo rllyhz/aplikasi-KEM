@@ -26,6 +26,8 @@ class ReadingFourthSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Menurut Haryadi (2015) aspek membaca ada dua, yaitu aspek mekanik dan konseptual.',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
 
           Space(

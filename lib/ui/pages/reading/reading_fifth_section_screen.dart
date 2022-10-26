@@ -36,6 +36,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Membaca adalah melihat serta memahami isi dari apa yang tertulis (dengan melisankan atau hanya dalam hati). Membaca secara umum dapat di artikan sebagai sebagai proses pengenalan dan penyandian kembali dan pemahaman simbol tertulis kemudian memberikan reaksi kritis terhadap bacaan dan mampu berpikir secara kreatif berdasarkan hasil bacaan yang kepentingan sehari-hari.',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
 
           Space(
@@ -71,6 +73,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Tujuan membaca merupakan sesuatu yang ingin di capai atau di dapat oleh pembaca dari proses membaca yang di lakukanya. Tujuan membaca di bagi menjadi dua yaitu tujuan membaca secara umum dan secara khusus.',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
 
           Space(
@@ -94,6 +98,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
               ParagraphText(
                 text:
                     'Tujuan umum atau utama adalah tujuan yang umumnya atau sering kali atau selalu dicanangkan oleh pembaca sewaktu membaca. Tujuan umum membaca menurut ada tiga jenis, yaitu untuk studi, untuk usaha, dan untuk kesenangan.',
+                shouldShowIndentation: true,
+                spaceCount: 3,
               ),
 
               Space(
@@ -113,6 +119,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
               ParagraphText(
                 text:
                     'Tujuan khusus adalah tujuan yang dicanangkan pemabaca pada saat tertentu sesuai situasi dan kondisi.',
+                shouldShowIndentation: true,
+                spaceCount: 3,
               ),
             ],
           ),
@@ -133,6 +141,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Manfaat membaca adalah guna. Faedah atau sesuatu yang di peroleh dari kegiatan membaca. Manfaat membaca merupakan hasil yang di dapat pembaca setelah membaca.',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
 
           Space(
@@ -150,6 +160,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
           ),
           ParagraphText(
             text: 'Aspek membaca ada dua, yaitu aspek mekanik dan konseptual. ',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
 
           Space(
@@ -173,6 +185,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
               ParagraphText(
                 text:
                     'Aspek mekanik merupakan gerakan mata melihat unsur-unsur bacaan. Unsur bacaan yang di maksud adalah kata, frasa, kalimat dan paragraf.',
+                shouldShowIndentation: true,
+                spaceCount: 3,
               ),
 
               Space(
@@ -192,6 +206,8 @@ class ReadingFifthSectionScreen extends StatelessWidget {
               ParagraphText(
                 text:
                     'Aspek konseptuan ialah cara otak memahami untuk menangkap makna-makna yang terkandung dalam unsur bacaan.',
+                shouldShowIndentation: true,
+                spaceCount: 3,
               ),
             ],
           ),

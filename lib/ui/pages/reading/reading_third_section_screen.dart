@@ -28,6 +28,8 @@ class ReadingThirdSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Manfaat membaca adalah guna, faedah atau sesuatu yang di peroleh dari kegiatan membaca. Manfaat membaca merupakan hasil yang di dapat pembaca setelah membaca. Jika tujuan membaca di tentukan sebelum mebaca dan saat membaca, maka manfaat membaca di peroleh setelah membaca. Salah satu ahli yang menjelaskan tentang manfaat membaca adalah Hernowo, menurut Hernowo manfaat membaca ada 3 yaitu:',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
           Space(
             size: sizes.paragraphNewLineMedium,

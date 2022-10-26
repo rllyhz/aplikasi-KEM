@@ -26,6 +26,8 @@ class ReadingSecondSectionScreen extends StatelessWidget {
           ParagraphText(
             text:
                 'Tujuan membaca merupakan sesuatu yang ingin di capai atau di dapat oleh pembaca dari proses membaca yang di lakukanya. Tujuan membaca dicanangkan oleh pembaca sebelum mambaca. Namun pada saat membaca, membaca bisa saja mengurangi atau menambahi tujuan membacanya. Tujuan membaca merupakan salah satu faktor yang menentukan keberhasilan membaca. Tujuan membaca merupakan modal dalam membaca. Hubungan antara tujuan membaca dengan kemampuan membaca sangat signifikan. Inilah yang mendorong para ahli menyepakati bahwa tujuan membaca merupakan modal utama membaca.',
+            shouldShowIndentation: true,
+            spaceCount: 3,
           ),
 
           Space(
