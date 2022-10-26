@@ -120,6 +120,7 @@ flutter:
     - assets/images/kem_increasement/illustration_2.png
     - assets/images/kem_increasement/illustration_3.png
     - assets/images/kem_increasement/illustration_4.png
+    - assets/images/result/main_illustration.png
 
   fonts:
     - family: Inter
