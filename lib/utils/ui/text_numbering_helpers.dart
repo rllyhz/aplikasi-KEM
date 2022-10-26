@@ -16,16 +16,23 @@ enum NumberingType {
 
 String getNumberingByIndex(int index, NumberingType numberingType) {
   if (numberingType == NumberingType.lowerCaseAlphabetic) {
-    var lastIndex = _lowerCaseAlphabeticalNumberings.length - 1;
-    return index >= lastIndex
-        ? _lowerCaseAlphabeticalNumberings[lastIndex]
-        : _lowerCaseAlphabeticalNumberings[index];
+    var totalAlphabetChars = _lowerCaseAlphabeticalNumberings.length;
+    if (index >= totalAlphabetChars) {
+      index = totalAlphabetChars - 1;
+    } else if (index <= 0) {
+      index = 0;
+    }
+    return _lowerCaseAlphabeticalNumberings[index];
   } else if (numberingType == NumberingType.upperCaseAlphabetic) {
-    var lastIndex = _upperCaseAlphabeticalNumberings.length - 1;
-    return index >= lastIndex
-        ? _upperCaseAlphabeticalNumberings[lastIndex]
-        : _upperCaseAlphabeticalNumberings[index];
+    var totalAlphabetChars = _upperCaseAlphabeticalNumberings.length;
+    if (index >= totalAlphabetChars) {
+      index = totalAlphabetChars - 1;
+    } else if (index <= 0) {
+      index = 0;
+    }
+    return _upperCaseAlphabeticalNumberings[index];
   } else if (numberingType == NumberingType.numeric) {
+    if (index <= 0) index = 0;
     return (index + 1).toString();
   } else {
     return "•";
@@ -43,18 +50,22 @@ String getNumberingSuffixOf(NumberingSuffix numberingSuffix) {
 }
 
 String getTimerStringOf(int countInSeconds) {
-  // counts / (60 * 60) => hours
-  // counts / 60 => mins
-  // counts & 60 => seconds
+  // counts mod (24 x 60 x 60) => day
+  // counts / (60 x 60) => hours
+  // (counts mod (60 x 60)) / 60  => mins
+  // counts mod 60 => seconds
 
   // Ex: 120 counts (seconds)
+  // 120 % (24 * 60 * 60) = 0
   // 120 / (60 * 60) = 0.03333333333333333
-  // 120 / 60 = 2
-  // 120 mod 60 = 0
+  // (120 % (60 * 60)) / 60 = 2
+  // 120 % 60 = 0
 
-  var hours = countInSeconds ~/ (60 * 60);
-  var minutes = countInSeconds ~/ 60;
-  var seconds = countInSeconds % 60;
+  var seconds = countInSeconds % (24 * 60 * 60);
+  var hours = seconds ~/ (60 * 60);
+  seconds %= (60 * 60);
+  var minutes = seconds ~/ 60;
+  seconds %= 60;
 
   var formattedHours = _formatTime(hours);
   var formattedMinutes = _formatTime(minutes);
