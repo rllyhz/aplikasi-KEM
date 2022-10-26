@@ -25,7 +25,7 @@ class KEMSecondSectionScreen extends StatelessWidget {
             text: 'Faktor-Faktor yang Mempengaruhi KEM',
           ),
           Space(
-            size: sizes.paragraphNewLineMedium,
+            size: sizes.paragraphNewLineLarge,
           ),
           SubHeadingText(
             text: 'Faktor Pembaca',
@@ -42,7 +42,7 @@ class KEMSecondSectionScreen extends StatelessWidget {
             spaceCount: 3,
           ),
           Space(
-            size: sizes.paragraphNewLineMedium,
+            size: sizes.paragraphNewLineLarge,
           ),
           SubHeadingText(
             text: 'Faktor Keterbacaan Teks Bacaan',
@@ -59,7 +59,7 @@ class KEMSecondSectionScreen extends StatelessWidget {
             spaceCount: 3,
           ),
           Space(
-            size: sizes.paragraphNewLineMedium,
+            size: sizes.paragraphNewLineLarge,
           ),
           SubHeadingText(
             text: 'Faktor Guru',

@@ -25,7 +25,7 @@ class KEMFirstSectionScreen extends StatelessWidget {
             text: 'Pengertian KEM (Kecepatan Efektif Membaca)',
           ),
           Space(
-            size: sizes.paragraphNewLineMedium,
+            size: sizes.paragraphNewLineLarge,
           ),
           ParagraphText(
             text:

@@ -49,7 +49,7 @@ class KEMThirdSectionScreen extends StatelessWidget {
             spaceCount: 3,
           ),
           Space(
-            size: sizes.paragraphNewLineMedium,
+            size: sizes.paragraphNewLineLarge,
           ),
           SubHeadingText(
             text: 'Faktor-Faktor yang Mempengaruhi KEM',
