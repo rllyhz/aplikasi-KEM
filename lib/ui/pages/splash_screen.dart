@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:aplikasi_kem/ui/pages/landing_screen.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/ui/font_utils.dart' as text_styles;
 import 'package:aplikasi_kem/utils/values/strings.dart' as string_resource;

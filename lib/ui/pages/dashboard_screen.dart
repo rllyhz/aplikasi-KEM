@@ -4,9 +4,9 @@ import 'package:aplikasi_kem/ui/pages/kem_increasement/kem_increasement_screen.d
 import 'package:aplikasi_kem/ui/pages/kem_measurement/kem_measurement_screen.dart';
 import 'package:aplikasi_kem/ui/pages/reading/reading_screen.dart';
 import 'package:aplikasi_kem/ui/pages/result/result_screen.dart';
-import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
-import 'package:aplikasi_kem/ui/widgets/illustration_card_button.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/surfaces/colored_card.dart';
+import 'package:aplikasi_kem/ui/widgets/buttons/illustration_card_button.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;

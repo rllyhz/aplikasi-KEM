@@ -1,9 +1,9 @@
-import 'package:aplikasi_kem/ui/widgets/banner_scaffold.dart';
-import 'package:aplikasi_kem/ui/widgets/indentation_box.dart';
-import 'package:aplikasi_kem/ui/widgets/paragraph_list.dart';
-import 'package:aplikasi_kem/ui/widgets/paragraph_text.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
-import 'package:aplikasi_kem/ui/widgets/sub_heading_text.dart';
+import 'package:aplikasi_kem/ui/widgets/scaffolds/banner_scaffold.dart';
+import 'package:aplikasi_kem/ui/widgets/surfaces/indentation_box.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/paragraph_list.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/paragraph_text.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/sub_heading_text.dart';
 import 'package:aplikasi_kem/utils/ui/text_numbering_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;

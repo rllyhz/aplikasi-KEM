@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:aplikasi_kem/ui/widgets/custom_button.dart';
-import 'package:aplikasi_kem/ui/widgets/highlight_text_box.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/buttons/custom_button.dart';
+import 'package:aplikasi_kem/ui/widgets/surfaces/highlight_text_box.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/utils/ui/text_numbering_helpers.dart';
 import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:flutter/material.dart';

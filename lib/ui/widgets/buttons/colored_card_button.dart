@@ -1,5 +1,5 @@
-import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
-import 'package:aplikasi_kem/ui/widgets/next_icon_button.dart';
+import 'package:aplikasi_kem/ui/widgets/surfaces/colored_card.dart';
+import 'package:aplikasi_kem/ui/widgets/buttons/next_icon_button.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 import 'package:flutter/material.dart';

@@ -1,6 +1,6 @@
-import 'package:aplikasi_kem/ui/widgets/custom_button.dart';
-import 'package:aplikasi_kem/ui/widgets/main_detail_scaffold.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/buttons/custom_button.dart';
+import 'package:aplikasi_kem/ui/widgets/scaffolds/main_detail_scaffold.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 

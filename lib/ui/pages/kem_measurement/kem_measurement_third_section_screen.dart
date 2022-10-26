@@ -1,8 +1,8 @@
-import 'package:aplikasi_kem/ui/widgets/highlight_text_box.dart';
-import 'package:aplikasi_kem/ui/widgets/paragraph_list.dart';
-import 'package:aplikasi_kem/ui/widgets/paragraph_text.dart';
+import 'package:aplikasi_kem/ui/widgets/surfaces/highlight_text_box.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/paragraph_list.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/paragraph_text.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/general_scaffold.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/ui/text_numbering_helpers.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;

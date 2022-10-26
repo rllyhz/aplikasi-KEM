@@ -1,4 +1,4 @@
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/utils/ui/text_numbering_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;

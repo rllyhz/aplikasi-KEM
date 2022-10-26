@@ -1,10 +1,10 @@
 import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_detail_one_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_detail_three_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_detail_two_screen.dart';
-import 'package:aplikasi_kem/ui/widgets/colored_card.dart';
-import 'package:aplikasi_kem/ui/widgets/paragraph_text.dart';
+import 'package:aplikasi_kem/ui/widgets/surfaces/colored_card.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/paragraph_text.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/general_scaffold.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;

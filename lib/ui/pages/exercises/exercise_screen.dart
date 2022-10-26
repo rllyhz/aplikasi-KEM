@@ -1,9 +1,9 @@
 import 'package:aplikasi_kem/ui/pages/exercises/exercise_first_section_screen.dart';
-import 'package:aplikasi_kem/ui/widgets/custom_button.dart';
-import 'package:aplikasi_kem/ui/widgets/main_heading_text.dart';
-import 'package:aplikasi_kem/ui/widgets/paragraph_list.dart';
+import 'package:aplikasi_kem/ui/widgets/buttons/custom_button.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/main_heading_text.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/paragraph_list.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/general_scaffold.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;

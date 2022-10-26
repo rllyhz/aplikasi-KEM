@@ -2,9 +2,9 @@ import 'package:aplikasi_kem/ui/pages/kem_increasement/first/kem_increasement_fi
 import 'package:aplikasi_kem/ui/pages/kem_increasement/fourth/kem_increasement_fourth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_increasement/second/kem_increasement_second_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/kem_increasement/third/kem_increasement_third_section_screen.dart';
-import 'package:aplikasi_kem/ui/widgets/colored_card_button.dart';
-import 'package:aplikasi_kem/ui/widgets/main_detail_scaffold.dart';
-import 'package:aplikasi_kem/ui/widgets/space.dart';
+import 'package:aplikasi_kem/ui/widgets/buttons/colored_card_button.dart';
+import 'package:aplikasi_kem/ui/widgets/scaffolds/main_detail_scaffold.dart';
+import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/routes.dart' as routes;
