@@ -21,6 +21,7 @@ class KEMMeasurementScreen extends StatelessWidget {
       appBarTitleTextColor: colors.darkTextColor,
       illustrationAssetName:
           'assets/images/kem_measurement/main_illustration.png',
+      illustrationWidthInPercentage: 0.62,
       tagline:
           'Sesulit apapun pelajaran, jangan pernah meragukan potensimu sendiri',
       body: Column(
