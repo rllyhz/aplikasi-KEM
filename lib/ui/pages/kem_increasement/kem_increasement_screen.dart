@@ -21,6 +21,7 @@ class KEMIncreasementScreen extends StatelessWidget {
       appBarTitleText: 'Peningkatan K.E.M',
       illustrationAssetName:
           'assets/images/kem_increasement/main_illustration.png',
+      illustrationWidthInPercentage: 0.6,
       tagline:
           'Sebesar usaha dikeluarkan sebesar itu pula kesuksesan yang didapat',
       body: Column(
