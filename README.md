@@ -78,4 +78,4 @@ This application has mostly static contents to populate on the UI. No network da
  1. [x] ParagraphText
  1. [x] MainHeadingText
  1. [x] SubHeadingText (bold or not) (numeric or alphabetic)
- 1. [x] ParagraphList (numeric or alphabetic)
+ 1. [x] ParagraphList (numeric, alphabetic or bullet)
