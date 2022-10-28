@@ -16,6 +16,7 @@ badges = [
     ["flutter", "v3.3.5", "flutter.svg", "dodgerblue"],
     ["dart", "v2.18.2", "dart.svg", "dodgerblue"],
     ["license", "MIT", "license.svg", "yellowgreen"],
+    ["status", "done", "status.svg"],
     # ["forks", "6", "forks.svg", "deepskyblue"],
     # ["downloads", "12k", "downloads.svg", "deepskyblue"],
 ]
