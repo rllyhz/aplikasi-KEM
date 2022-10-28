@@ -3,10 +3,9 @@ import 'package:aplikasi_kem/ui/widgets/buttons/custom_button.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/main_detail_scaffold.dart';
 import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/utils/browsable_action.dart';
+import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
-import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
-import 'package:aplikasi_kem/utils/routes.dart' as routes;
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});
@@ -40,41 +39,12 @@ class ResultScreen extends StatelessWidget {
               var success = await openUrl(exerciseResultsUrl);
 
               if (!success) {
-                if (mounted) _showAlertDialog(context);
+                if (mounted) showAlertDialog(context);
               }
             },
             backgroundColor: colors.blueColor,
             textColor: colors.whiteColor,
             type: CustomButtonType.large,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Future<void> _showAlertDialog(BuildContext context) async {
-    var textTheme = Theme.of(context).textTheme;
-
-    await showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: Text(
-          'Gagal menelusuri Url',
-          style: textTheme.headline1?.copyWith(
-            color: colors.darkTextColor,
-            fontSize: sizes.textSizeLarge,
-          ),
-        ),
-        icon: const Icon(Icons.warning_rounded, size: 46.0),
-        actions: [
-          CustomButton(
-            text: 'Baik',
-            backgroundColor: colors.blueColor,
-            textColor: colors.whiteColor,
-            onPressed: () {
-              routes.navigateUp(ctx);
-            },
-            type: CustomButtonType.small,
           ),
         ],
       ),
