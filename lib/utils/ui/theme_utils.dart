@@ -1,3 +1,4 @@
+import 'package:aplikasi_kem/ui/widgets/buttons/custom_button.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/ui/font_utils.dart' as text_styles;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
@@ -83,4 +84,33 @@ void setStatusBarColor({Color? color, Brightness? brightness}) {
     statusBarBrightness: brightness ?? Brightness.light,
     statusBarIconBrightness: brightness ?? Brightness.light,
   ));
+}
+
+Future<void> showAlertDialog(BuildContext context) async {
+  var textTheme = Theme.of(context).textTheme;
+
+  await showDialog(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      title: Text(
+        'Gagal menelusuri Url',
+        style: textTheme.headline1?.copyWith(
+          color: colors.darkTextColor,
+          fontSize: sizes.textSizeLarge,
+        ),
+      ),
+      icon: const Icon(Icons.warning_rounded, size: 46.0),
+      actions: [
+        CustomButton(
+          text: 'Baik',
+          backgroundColor: colors.blueColor,
+          textColor: colors.whiteColor,
+          onPressed: () {
+            routes.navigateUp(ctx);
+          },
+          type: CustomButtonType.small,
+        ),
+      ],
+    ),
+  );
 }

@@ -1,7 +1,10 @@
+import 'package:aplikasi_kem/data/exercise_urls.dart';
 import 'package:aplikasi_kem/ui/widgets/texts/main_heading_text.dart';
 import 'package:aplikasi_kem/ui/widgets/texts/paragraph_text.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/exercise_scaffold.dart';
 import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
+import 'package:aplikasi_kem/utils/browsable_action.dart';
+import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 
@@ -10,10 +13,25 @@ class ExerciseSixthSectionScreen extends StatelessWidget {
 
   static const String route = '/exercise-sixth-section';
 
+  bool get mounted {
+    try {
+      (this as Element).widget;
+      return true;
+    } on TypeError catch (_) {
+      return false;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return ExerciseScaffold(
-      onActionButtonPressed: () {},
+      onActionButtonPressed: () async {
+        var success = await openUrl(exerciseFiveUrl);
+
+        if (!success) {
+          if (mounted) showAlertDialog(context);
+        }
+      },
       exerciseContents: [
         // Title
         const Center(
