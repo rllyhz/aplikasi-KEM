@@ -1,12 +1,20 @@
 # K.E.M (Kecepatan Efektif Membaca)
 
-Aplikasi ini dibuat bertujuan agar dapat membantu meningkatkan kecepatan membaca siswa.
+[![Flutter Badge](badges/flutter.svg)](https://flutter.dev)
+[![Dart Badge](badges/dart.svg)](https://dart.dev/)
+[![License Badge](badges/license.svg)](https://flutter.dev)
 
-`status:` *under-development*
+This app was created to help improve student literacy.
+
+**Kecepatan Efektif Membaca (KEM)** is a combination of motor ability (eye movement) or visual ability with a person's cognitive in reading (Harjasujana & Mulyati, 1987). [See more](https://www.tanotofoundation.org/id/news/penerapan-kecepatan-efektif-membaca-di-sekolah-mitra-tanoto-foundation/).
+
+`status:` *done*
 
 ## Note
 
-### Screens
+This application has mostly static contents. No network data requests and dynamically update the current data on it.
+
+### Available Screens
 
 - [x] SplashScreen
 - [x] LandingScreen
