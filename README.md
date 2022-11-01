@@ -5,6 +5,11 @@
 [![License Badge](badges/license.svg)](https://github.com/rllyhz/aplikasi-KEM/blob/master/LICENSE)
 [![Status Badge](badges/status.svg)](https://github.com/rllyhz/aplikasi-KEM/)
 
+<br /> <br />
+
+<h3 align="center">Previews</h3>
+<br />
+
 <p align="center">
     <img src="art/splash_dashboard.gif"
         alt="Splash to Dashboard"
