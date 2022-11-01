@@ -7,18 +7,18 @@
 
 <p align="center">
     <img src="art/splash_dashboard.gif"
-        alt="Home Screen"
+        alt="Splash to Dashboard"
         width="200" />
         <img src="art/dashboard_detail.gif"
-        alt="Home Screen"
+        alt="Dashboard to Detail"
         width="200" />
 </p>
 <p align="center">
     <img src="art/dashboard_exercise.gif"
-        alt="Home Screen"
+        alt="Dashboard to Exercise"
         width="200" />
         <img src="art/exercise_form.gif"
-        alt="Home Screen"
+        alt="Exercise Form"
         width="200" />
 </p>
 
