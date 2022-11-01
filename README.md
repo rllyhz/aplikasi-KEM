@@ -5,6 +5,23 @@
 [![License Badge](badges/license.svg)](https://github.com/rllyhz/aplikasi-KEM/blob/master/LICENSE)
 [![Status Badge](badges/status.svg)](https://github.com/rllyhz/aplikasi-KEM/)
 
+<p align="center">
+    <img src="art/splash_dashboard.gif"
+        alt="Home Screen"
+        width="200" />
+        <img src="art/dashboard_detail.gif"
+        alt="Home Screen"
+        width="200" />
+</p>
+<p align="center">
+    <img src="art/dashboard_exercise.gif"
+        alt="Home Screen"
+        width="200" />
+        <img src="art/exercise_form.gif"
+        alt="Home Screen"
+        width="200" />
+</p>
+
 This app was created to help improve students' literacy. **Kecepatan Efektif Membaca (KEM)** is a combination of motor ability (eye movement) or visual ability with a person's cognitive in reading (Harjasujana & Mulyati, 1987). [See more](https://www.tanotofoundation.org/id/news/penerapan-kecepatan-efektif-membaca-di-sekolah-mitra-tanoto-foundation/).
 
 ## Note 📌
