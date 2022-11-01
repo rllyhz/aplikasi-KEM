@@ -37,7 +37,7 @@ dependencies:
   url_launcher: ^6.1.6
 
 flutter_icons:
-  image_path: "assets/launcher/icon_logo.png"
+  image_path: "assets/launcher/icon_logo_colored.png"
   android: true
 
 dev_dependencies:
