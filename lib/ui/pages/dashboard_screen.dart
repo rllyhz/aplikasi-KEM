@@ -49,6 +49,9 @@ class DashboardScreen extends StatelessWidget {
   }
 
   Widget _buildContent(BuildContext context) {
+    const paddingCard =
+        EdgeInsets.only(left: 18.0, right: 12.0, top: 12.0, bottom: 8.0);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -127,9 +130,9 @@ class DashboardScreen extends StatelessWidget {
               text: 'Materi Membaca',
               illustrationPath: 'assets/images/dashboard/reading.png',
               backgroundColor: colors.redColor,
-              padding: const EdgeInsets.only(
-                  left: 18.0, right: 18.0, top: 12.0, bottom: 0),
+              padding: paddingCard,
               textColor: colors.whiteColor,
+              maxTextWidthInPercentage: 20.0,
               onIconPressed: () {
                 routes.navigateTo(context, ReadingScreen.route);
               },
@@ -139,9 +142,9 @@ class DashboardScreen extends StatelessWidget {
               illustrationPath:
                   'assets/images/dashboard/girls_study_together.png',
               backgroundColor: colors.orangeColor,
-              padding: const EdgeInsets.only(
-                  left: 18.0, right: 18.0, top: 12.0, bottom: 0),
+              padding: paddingCard,
               textColor: colors.whiteColor,
+              maxTextWidthInPercentage: 20.0,
               onIconPressed: () {
                 routes.navigateTo(context, KEMScreen.route);
               },
@@ -150,8 +153,7 @@ class DashboardScreen extends StatelessWidget {
               text: 'Pengukuran K.E.M',
               illustrationPath: 'assets/images/dashboard/web_page_update.png',
               backgroundColor: colors.limeColor,
-              padding: const EdgeInsets.only(
-                  left: 18.0, right: 18.0, top: 12.0, bottom: 0),
+              padding: paddingCard,
               textColor: colors.whiteColor,
               onIconPressed: () {
                 routes.navigateTo(context, KEMMeasurementScreen.route);
@@ -162,8 +164,7 @@ class DashboardScreen extends StatelessWidget {
               illustrationPath:
                   'assets/images/dashboard/online_business_negotiation.png',
               backgroundColor: colors.darkPurpleColor,
-              padding: const EdgeInsets.only(
-                  left: 18.0, right: 18.0, top: 12.0, bottom: 0),
+              padding: paddingCard,
               textColor: colors.whiteColor,
               onIconPressed: () {
                 routes.navigateTo(context, ExerciseScreen.route);
@@ -174,8 +175,7 @@ class DashboardScreen extends StatelessWidget {
               illustrationPath:
                   'assets/images/dashboard/man_flying_on_a_rocket.png',
               backgroundColor: colors.lightBlueColor,
-              padding: const EdgeInsets.only(
-                  left: 18.0, right: 18.0, top: 12.0, bottom: 0),
+              padding: paddingCard,
               textColor: colors.whiteColor,
               onIconPressed: () {
                 routes.navigateTo(context, KEMIncreasementScreen.route);
@@ -185,8 +185,7 @@ class DashboardScreen extends StatelessWidget {
               text: 'Hasil',
               illustrationPath: 'assets/images/dashboard/completed_form.png',
               backgroundColor: colors.greenColor,
-              padding: const EdgeInsets.only(
-                  left: 18.0, right: 18.0, top: 12.0, bottom: 0),
+              padding: paddingCard,
               textColor: colors.whiteColor,
               onIconPressed: () {
                 routes.navigateTo(context, ResultScreen.route);
