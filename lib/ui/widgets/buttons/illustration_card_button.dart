@@ -15,6 +15,8 @@ class IllustrationCardButton extends StatelessWidget {
     this.textColor,
     this.elevation,
     this.onIconPressed,
+    this.maxIconButtonWidthInPercentage = 10.5,
+    this.maxTextWidthInPercentage = 25.5,
   });
 
   final String illustrationPath;
@@ -25,11 +27,14 @@ class IllustrationCardButton extends StatelessWidget {
   final double? borderRadiusSize;
   final double? elevation;
   final Function()? onIconPressed;
+  final double maxTextWidthInPercentage;
+  final double maxIconButtonWidthInPercentage;
 
   @override
   Widget build(BuildContext context) {
     var maxWidth = MediaQuery.of(context).size.width;
-    var maxTextWidth = maxWidth * 20.5 / 100;
+    var maxTextWidth = maxWidth * maxTextWidthInPercentage / 100;
+    var maxIconButtonWidth = maxWidth * maxIconButtonWidthInPercentage / 100;
 
     return ColoredCard(
       backgroundColor: backgroundColor,
@@ -65,10 +70,14 @@ class IllustrationCardButton extends StatelessWidget {
                           ),
                     ),
                   ),
-                  NextIconButton(
-                    backgroundColor: colors.whiteColor,
-                    iconColor: backgroundColor,
-                    onIconPressed: onIconPressed,
+                  SizedBox(
+                    width: maxIconButtonWidth,
+                    height: maxIconButtonWidth,
+                    child: NextIconButton(
+                      backgroundColor: colors.whiteColor,
+                      iconColor: backgroundColor,
+                      onIconPressed: onIconPressed,
+                    ),
                   ),
                 ],
               ),
