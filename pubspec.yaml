@@ -32,8 +32,13 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.10.0
   flutter_svg: ^1.1.5
   url_launcher: ^6.1.6
+
+flutter_icons:
+  image_path: "assets/launcher/icon_logo.png"
+  android: true
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -78,6 +83,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
+    - assets/launcher/icon_logo.png
     - assets/icons/icon_logo.svg
     - assets/icons/icon_logo_colored.svg
     - assets/icons/icon_arrow_right.svg
