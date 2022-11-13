@@ -27,11 +27,18 @@ class ExerciseScaffold extends StatefulWidget {
 class _ExerciseScaffoldState extends State<ExerciseScaffold> {
   int _counterInSeconds = 0;
   bool _doesTimerStart = false;
+  bool _doesTimerFinish = true;
+  bool _shouldShowAlert = false;
 
   Timer? _timer;
 
   void _startTimer() {
-    _doesTimerStart = true;
+    setState(() {
+      _shouldShowAlert = true;
+      _doesTimerStart = true;
+      _doesTimerFinish = false;
+    });
+
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
         _counterInSeconds += 1;
@@ -39,28 +46,38 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
     });
   }
 
-  void _pauseTimer() {
+  // void _pauseTimer() {
+  //   _timer?.cancel();
+  //   _timer = null;
+
+  //   setState(() {
+  //     _doesTimerStart = false;
+  //   });
+  // }
+
+  void _finishTimer() {
     _timer?.cancel();
     _timer = null;
 
     setState(() {
-      _doesTimerStart = false;
+      _doesTimerFinish = true;
+      _shouldShowAlert = false;
     });
   }
 
-  void _resetTimer() {
-    _timer?.cancel();
-    _timer = null;
+  // void _resetTimer() {
+  //   _timer?.cancel();
+  //   _timer = null;
 
-    setState(() {
-      _counterInSeconds = 0;
-      _doesTimerStart = false;
-    });
-  }
+  //   setState(() {
+  //     _counterInSeconds = 0;
+  //     _doesTimerStart = false;
+  //   });
+  // }
 
   Future<bool> _onWillPop() async {
-    if (_doesTimerStart) _showConfirmDialog(context);
-    return true;
+    if (_shouldShowAlert) _showConfirmDialog(context);
+    return !_shouldShowAlert;
   }
 
   @override
@@ -77,7 +94,7 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
           color: colors.darkTextColor,
           shouldShowNavigateUp: Navigator.canPop(context),
           onNavigateUp: () {
-            if (_doesTimerStart) {
+            if (_shouldShowAlert) {
               _showConfirmDialog(context);
             } else {
               routes.navigateUp(context);
@@ -134,16 +151,15 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            _buildCustomButton(
-                                _doesTimerStart ? "Jeda" : 'Mulai', () {
-                              if (_doesTimerStart) {
-                                _pauseTimer();
-                              } else {
+                            _buildCustomButton('Mulai', () {
+                              if (!_doesTimerStart) {
                                 _startTimer();
                               }
                             }, CustomButtonType.small),
-                            _buildCustomButton('Reset', () {
-                              _resetTimer();
+                            _buildCustomButton('Selesai', () {
+                              if (!_doesTimerFinish) {
+                                _finishTimer();
+                              }
                             }, CustomButtonType.small),
                           ],
                         ),
@@ -172,7 +188,6 @@ class _ExerciseScaffoldState extends State<ExerciseScaffold> {
 
   void _showConfirmDialog(BuildContext context) async {
     var textTheme = Theme.of(context).textTheme;
-
     await showDialog(
       context: context,
       builder: (ctx) => AlertDialog(

@@ -34,6 +34,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var maxWidth = MediaQuery.of(context).size.width;
+    var logosContainerWidth = maxWidth * 0.25;
+
     return Scaffold(
       backgroundColor: colors.blueColor,
       body: Stack(
@@ -41,12 +44,19 @@ class _SplashScreenState extends State<SplashScreen> {
           // background
           Center(
             child: SizedBox(
-              width: MediaQuery.of(context).size.width,
+              width: maxWidth,
               child: Image.asset(
                 'assets/images/splash/illustration.png',
                 fit: BoxFit.fill,
               ),
             ),
+          ),
+
+          Positioned(
+            top: logosContainerWidth / 2,
+            left: logosContainerWidth,
+            right: logosContainerWidth,
+            child: Image.asset('assets/images/splash/splash_logos.png'),
           ),
 
           // logo

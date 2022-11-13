@@ -1,9 +1,8 @@
 import 'package:aplikasi_kem/data/exercise_urls.dart';
-import 'package:aplikasi_kem/ui/widgets/texts/main_heading_text.dart';
-import 'package:aplikasi_kem/ui/widgets/texts/paragraph_text.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/exercise_scaffold.dart';
 import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/utils/browsable_action.dart';
+import 'package:aplikasi_kem/utils/ui/exercise_utils.dart';
 import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
@@ -32,79 +31,32 @@ class ExerciseFourthSectionScreen extends StatelessWidget {
           if (mounted) showAlertDialog(context);
         }
       },
-      exerciseContents: [
-        // Title
-        const Center(
-          child: MainHeadingText(
-            text: 'Nasib Pencuri Sendal',
-            textAlign: TextAlign.center,
-          ),
-        ),
-        const Space(size: sizes.paragraphNewLineLarge),
-
-        // Content
-        _buildParagraph(
-          'Pada suatu pagi, Arya sedang asik makan soto di warung makan kesukaannya. Setelah kenyang Arya bergegas untuk segera pulang.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Ditengah perjalanan pulang, Arya mengalami kecelakaan terserempet oleh sepeda motor yang ugal-ugalan. Kecelakaan tersebut mengakibatkan sendal Arya putus.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Dengan terpaksa Arya berjalan kaki tanpa menggunakan sandal. Karena rumahnya jauh, ia memutuskan untuk pergi ke toko terdekat untuk membeli sandal. Tapi apa daya, uangnya tidak mencukupi.',
-          showIndentation: false,
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Karena uangnya tidak mencukupi, Arya pun mempunyai niat untuk mencuri sandal di masjid yang letaknya hanya beberapa meter dari toko tersebut. Arya hendak mengambil sandal terbaik yang ada di masjid itu.Sambil duduk diteras masjid, ia memperhatikan setiap orang yang akan masuk ke masjid. Jadi ketika targetnya sibuk beribadah, ia segera mengambil sandal tersebut.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Ternyata aksinya berjalan dengan lancar, Arya berhasil mendapatkan sandal berwarna hitam yang merupakan sandal terbagus dimasjid tersebut. Tidak diduga, sang pemilik sandal menyadari bahwa Arya telah mencuri sandalnya.Pemilik sandal langsung teriak dan mengejar Arya. Apes sekali Arya, perutnya yang buncit membuat ia tidak bisa berlari kencang. Arya pun dibawa ke kantor polisi. Setelah dilakukan penyelidikan, Arya divonis dengan pasal pencurian dan kasusnya akan disidangkan satu minggu lagi. Sial sekali bagi Arya, hal sepele ini membuatnya harus terseret ke meja hijau.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Hari persidangan telah tiba, Arya duduk di kursi tersangka dengan wajah tertunduk.',
-          showIndentation: false,
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Hakim  :',
-          showIndentation: false,
-        ),
-        _buildParagraph(
-          '“Baiklah, Arya, umur 24 tahun, telah terbukti telah mencuri sandal seharga 30.000 rupiah. Dengan ini,Anda dihukum selama 5 tahun penjara”.',
-          showIndentation: false,
-          fontStyle: FontStyle.italic,
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Arya :',
-          showIndentation: false,
-        ),
-        _buildParagraph(
-          '“Loh?! Pak, ini tidak adil, mengapa hukuman saya jauh lebih berat dibandingkan dengan para koruptor?”.',
-          showIndentation: false,
-          fontStyle: FontStyle.italic,
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Kemudian, hakim memberikan penjelasan kepada Arya, bahwa ia mencuri sendal sehingga merugikan seseorang 30.000 rupiah. Sedangkan para koruptor mencuri uang 2 miliar sehingga merugikan 200 juta rakyat Indonesia. Nah kalau dihitung, koruptor hanya merugikan 10 rupiah saja setiap orang. Jadi kerugian akibat tindakan yang dilakukan oleh Arya lebih besar daripada tindakan yang dilakukan oleh para koruptor.',
-        ),
-      ],
+      exerciseContents: generateExerciseUI(
+        'Pentingnya Budaya Membaca',
+        421,
+        [
+          buildNormalParagraph(
+              'Membaca adalah salah satu cara untuk mendapatkan informasi selain dengan mendengarkan dan melihat. Informasi yang didapatkan adalah informasi tertulis. Membaca perlu ditekankan kepada setiap individu sejak dini karena informasi yang paling mudah untuk kita peroleh adalah melalui bacaan, baik koran, majalah, tabloid, maupun buku-buku.'),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+              'Orang yang menerapkan budaya membaca dalam hidupnya akan dipenuhi oleh informasi yang up to date dan ilmu pengetahuan. Minimnya budaya membaca di kalangan remaja Indonesia perlu diperhatikan. Problema tersebut, tidak bisa kita anggap remeh karena besarnya rasa cinta membaca sama dengan kemajuan. Artinya, suatu tingkatan minat baca seseorang menentukan tingkat kualitas serta wawasannya. Kebiasaan membaca perlu ditingkatkan terutama kepada para remaja Indonesia. Dalam proses belajar mengajar, mustahil berhasil tanpa adanya “membaca”.'),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+              'Suatu asumsi menyatakan budaya membaca lebih penting daripada sekolah dalam tujuan mencapai kesuksesan. Suka membaca tanpa bersekolah masih berpeluang dalam mencapai kesuksesan, karena membaca membuat pola pikir kita luas dan tajam. Meningkatkan tingkat kreativitas kita dalam bekerja atau menciptakan lapangan kerja guna mencapai kesuksesan. Sedangkan, tidak suka membaca, tapi bersekolah, peluang untuk mencapai kesuksesan lebih kecil. Banyak lulusan kuliah yang menjadi seorang pengangguran karena minat bacanya pasti kurang. Maka dari itu, membaca sangatlah penting bagi semua umur. Dari umur ketika kita mulai bisa membaca sampai kita tua pun kita haruslah terus menerapkan budaya membaca.'),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+              'Budaya membaca sangat bermanfaat untuk memperdalam ilmu pengetahuan, baik itu dari sekolah maupun dari luar sekolah karena kita hanya dapat 25% dari sekolah dan sisanya 75% itu kita peroleh sendiri. Dengan budaya membaca sejak dini, akan membuat kita tahu akan dunia di luar rumah kita tanpa harus keluar dari rumah.'),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+              'Membaca dipandang sebagai suatu kegiatan yang amat strategi dan mendasar dalam perkembangan kepribadian/psikologi pada setiap diri manusia. Kenyataan ini dapat dilihat dari kebiasaan seseorang, bahwa apa yang dibaca akan berpengaruh terhadap pola pikir dan perilakunya pada kehidupan sehari-hari.'),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+              'Membaca juga merupakan kegiatan pembelajaran memadukan ide-ide guna menyusun konsep, dan membandingkan pengetahuan baru dengan pengetahuan yang sebelumnya. Implementasi dari penyerapan proses membaca buku, dapat dilihat hasilnya pada kecerdasan melakukan proses analisis dan pelaksanaannya pada olah keterampilan yang dimiliki. Orang yang menerapkan budaya membaca mempunyai logika yang lebih besar dan proses analisis yang lebih besar dibandingkan orang yang jarang membaca.'),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+              'Pemasalahan di sini adalah rakyat di negara kita kebanyakan yang malas membaca karena menurut mereka informasi lebih mudah didapatkan dan diproses oleh mereka dengan cara menonton. Jika dibandingkan dengan masyarakat luar, kita pastilah tertinggal jauh. Masyarakat di negara maju selalu menyempatkan waktu mereka dalam sehari untuk membaca. Oleh karena itu, membaca tidak hanya membantu kita secara induvidual, membaca juga dapat membantu memajukan negara kita.'),
+        ],
+      ),
     );
   }
-
-  ParagraphText _buildParagraph(
-    String text, {
-    bool showIndentation = true,
-    FontStyle fontStyle = FontStyle.normal,
-  }) =>
-      ParagraphText(
-        text: text,
-        shouldShowIndentation: showIndentation,
-        spaceCount: 3,
-        fontStyle: fontStyle,
-      );
 }

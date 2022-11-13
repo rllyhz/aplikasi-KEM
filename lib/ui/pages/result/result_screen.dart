@@ -6,6 +6,7 @@ import 'package:aplikasi_kem/utils/browsable_action.dart';
 import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
+import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});
@@ -32,7 +33,16 @@ class ResultScreen extends StatelessWidget {
           'Sedikit kemajuan setiap hari di dalam dirimu menambah sesuatu hingga hasil yang besar',
       body: Column(
         children: [
-          const Space(size: 24.0),
+          Text(
+            'Rumus KEM:',
+            style: Theme.of(context).textTheme.headline2?.copyWith(
+                  fontSize: sizes.textSizeHeading,
+                  color: colors.darkTextColor,
+                ),
+          ),
+          const Space(size: 12.0),
+          Image.asset('assets/images/kem_measurement/formula.png'),
+          const Space(size: 32.0),
           CustomButton(
             text: 'Hasil',
             onPressed: () async {

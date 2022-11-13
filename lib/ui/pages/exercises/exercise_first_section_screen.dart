@@ -1,6 +1,9 @@
+import 'package:aplikasi_kem/ui/pages/exercises/exercise_eighth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/exercises/exercise_fifth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/exercises/exercise_fourth_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/exercises/exercise_ninth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/exercises/exercise_second_section_screen.dart';
+import 'package:aplikasi_kem/ui/pages/exercises/exercise_seventh_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/exercises/exercise_sixth_section_screen.dart';
 import 'package:aplikasi_kem/ui/pages/exercises/exercise_third_section_screen.dart';
 import 'package:aplikasi_kem/ui/widgets/buttons/colored_card_button.dart';
@@ -29,8 +32,8 @@ class ExerciseFirstSectionScreen extends StatelessWidget {
           const Space(size: 12.0),
           ColoredCardButton(
             backgroundColor: colors.orangeColor,
-            label: 'Teks Laporan Hasil Observasi',
-            labelWidthInPercentage: 0.60,
+            label: 'Teks Laporan Hasil Observasi I',
+            labelWidthInPercentage: 0.62,
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(context, ExerciseSecondSectionScreen.route);
@@ -38,8 +41,9 @@ class ExerciseFirstSectionScreen extends StatelessWidget {
           ),
           const Space(size: 12.0),
           ColoredCardButton(
-            backgroundColor: colors.limeColor,
-            label: 'Teks Eksposisi',
+            backgroundColor: colors.orangeColor,
+            label: 'Teks Laporan Hasil Observasi II',
+            labelWidthInPercentage: 0.62,
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(context, ExerciseThirdSectionScreen.route);
@@ -47,8 +51,8 @@ class ExerciseFirstSectionScreen extends StatelessWidget {
           ),
           const Space(size: 12.0),
           ColoredCardButton(
-            backgroundColor: colors.greenColor,
-            label: 'Teks Anekdot',
+            backgroundColor: colors.limeColor,
+            label: 'Teks Eksposisi I',
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(context, ExerciseFourthSectionScreen.route);
@@ -56,8 +60,8 @@ class ExerciseFirstSectionScreen extends StatelessWidget {
           ),
           const Space(size: 12.0),
           ColoredCardButton(
-            backgroundColor: colors.redColor,
-            label: 'Teks Negosiasi',
+            backgroundColor: colors.limeColor,
+            label: 'Teks Eksposisi II',
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(context, ExerciseFifthSectionScreen.route);
@@ -65,11 +69,38 @@ class ExerciseFirstSectionScreen extends StatelessWidget {
           ),
           const Space(size: 12.0),
           ColoredCardButton(
-            backgroundColor: colors.lightBlueColor,
-            label: 'Teks Biografi',
+            backgroundColor: colors.redColor,
+            label: 'Teks Negosiasi I',
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(context, ExerciseSixthSectionScreen.route);
+            },
+          ),
+          const Space(size: 12.0),
+          ColoredCardButton(
+            backgroundColor: colors.redColor,
+            label: 'Teks Negosiasi II',
+            textColor: colors.whiteColor,
+            onIconPressed: () {
+              routes.navigateTo(context, ExerciseSeventhSectionScreen.route);
+            },
+          ),
+          const Space(size: 12.0),
+          ColoredCardButton(
+            backgroundColor: colors.lightBlueColor,
+            label: 'Teks Biografi I',
+            textColor: colors.whiteColor,
+            onIconPressed: () {
+              routes.navigateTo(context, ExerciseEighthSectionScreen.route);
+            },
+          ),
+          const Space(size: 12.0),
+          ColoredCardButton(
+            backgroundColor: colors.lightBlueColor,
+            label: 'Teks Biografi II',
+            textColor: colors.whiteColor,
+            onIconPressed: () {
+              routes.navigateTo(context, ExerciseNinthSectionScreen.route);
             },
           ),
         ],

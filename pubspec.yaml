@@ -90,6 +90,7 @@ flutter:
     - assets/icons/icon_arrow_right_simple.svg
     - assets/icons/icon_navigate_up.svg
     - assets/images/splash/illustration.png
+    - assets/images/splash/splash_logos.png
     - assets/images/landing/shaped_background.png
     - assets/images/landing/all_illustration.png
     - assets/images/dashboard/top_background.png

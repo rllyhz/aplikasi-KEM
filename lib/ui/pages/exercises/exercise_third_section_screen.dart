@@ -1,9 +1,8 @@
 import 'package:aplikasi_kem/data/exercise_urls.dart';
-import 'package:aplikasi_kem/ui/widgets/texts/main_heading_text.dart';
-import 'package:aplikasi_kem/ui/widgets/texts/paragraph_text.dart';
 import 'package:aplikasi_kem/ui/widgets/scaffolds/exercise_scaffold.dart';
 import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/utils/browsable_action.dart';
+import 'package:aplikasi_kem/utils/ui/exercise_utils.dart';
 import 'package:aplikasi_kem/utils/ui/theme_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
@@ -32,51 +31,35 @@ class ExerciseThirdSectionScreen extends StatelessWidget {
           if (mounted) showAlertDialog(context);
         }
       },
-      exerciseContents: [
-        // Title
-        const Center(
-          child: MainHeadingText(
-            text: 'Pentingnya Budaya Membaca',
-            textAlign: TextAlign.center,
+      exerciseContents: generateExerciseUI(
+        'Sampah',
+        545,
+        [
+          buildNormalParagraph(
+            'Sampah merupakan material sisa yang tidak diinginkan setelah berakhirnya suatu proses. Sampah dapat bersumber dari alam, manusia, konsumsi, nuklir, industri, dan pertambangan. Sampah di bumi akan terus bertambah selama masih ada kegiatan yang dilakukan oleh baik alam maupun manusia. Sampah yang dihasilkan di Indonesia mencapai 11.330 ton per hari. Sampah dapat dibedakan berdasarkan sifat dan bentuknya. Berdasarkan sifatnya, sampah bagi menjadi dua, yaitu sampah organik dan anorganik.',
           ),
-        ),
-        const Space(size: sizes.paragraphNewLineLarge),
-
-        // Content
-        _buildParagraph(
-          'Membaca adalah salah satu cara untuk mendapatkan informasi selain dengan mendengarkan dan melihat. Informasi yang didapatkan adalah informasi tertulis. Membaca perlu ditekankan kepada setiap individu sejak dini karena informasi yang paling mudah untuk kita peroleh adalah melalui bacaan, baik koran, majalah, tabloid, maupun buku-buku.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Orang yang menerapkan budaya membaca dalam hidupnya akan dipenuhi oleh informasi yang up to date dan ilmu pengetahuan. Minimnya budaya membaca di kalangan remaja Indonesia perlu diperhatikan. Problema tersebut, tidak bisa kita anggap remeh karena besarnya rasa cinta membaca sama dengan kemajuan. Artinya, suatu tingkatan minat baca seseorang menentukan tingkat kualitas serta wawasannya. Kebiasaan membaca perlu ditingkatkan terutama kepada para remaja Indonesia. Dalam proses belajar mengajar, mustahil berhasil tanpa adanya “membaca.”',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Suatu asumsi menyatakan budaya membaca lebih penting daripada sekolah dalam tujuan mencapai kesuksesan. Suka membaca tanpa bersekolah masih berpeluang dalam mencapai kesuksesan, karena membaca membuat pola pikir kita luas dan tajam. Meningkatkan tingkat kreativitas kita dalam bekerja atau menciptakan lapangan kerja guna mencapai kesuksesan. Sedangkan, tidak suka membaca, tapi bersekolah, peluang untuk mencapai kesuksesan lebih kecil. Banyak lulusan kuliah yang menjadi seorang pengangguran karena minat bacanya pasti kurang. Maka dari itu, membaca sangatlah penting bagi semua umur. Dari umur ketika kita mulai bisa membaca sampai kita tua pun kita haruslah terus menerapkan budaya membaca.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Budaya membaca sangat bermanfaat untuk memperdalam ilmu pengetahuan, baik itu dari sekolah maupun dari luar sekolah karena kita hanya dapat 25% dari sekolah dan sisanya 75% itu kita peroleh sendiri. Dengan budaya membaca sejak dini, akan membuat kita tahu akan dunia di luar rumah kita tanpa harus keluar dari rumah.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Membaca dipandang sebagai suatu kegiatan yang amat strategi dan mendasar dalam perkembangan kepribadian/psikologi pada setiap diri manusia. Kenyataan ini dapat dilihat dari kebiasaan seseorang, bahwa apa yang dibaca akan berpengaruh terhadap pola pikir dan perilakunya pada kehidupan sehari-hari.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Membaca juga merupakan kegiatan pembelajaran memadukan ide-ide guna menyusun konsep, dan membandingkan pengetahuan baru dengan pengetahuan yang sebelumnya. Implementasi dari penyerapan proses membaca buku, dapat dilihat hasilnya pada kecerdasan melakukan proses analisis dan pelaksanaannya pada olah keterampilan yang dimiliki. Orang yang menerapkan budaya membaca mempunyai logika yang lebih besar dan proses analisis yang lebih besar dibandingkan orang yang jarang membaca.',
-        ),
-        const Space(size: sizes.paragraphNewLineMedium),
-        _buildParagraph(
-          'Pemasalahan di sini adalah rakyat di negara kita kebanyakan yang malas membaca karena menurut mereka informasi lebih mudah didapatkan dan diproses oleh mereka dengan cara menonton. Jika dibandingkan dengan masyarakat luar, kita pastilah tertinggal jauh. Masyarakat di negara maju selalu menyempatkan waktu mereka dalam sehari untuk membaca. Oleh karena itu, membaca tidak hanya membantu kita secara induvidual, membaca juga dapat membantu memajukan negara kita.',
-        ),
-      ],
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+            'Sampah organik merupakan sampah yang dapat diuraikan atau degradable. Contoh sampah organik adalah sampah yang mudah membusuk seperti sisa makanan, sayuran, daundaun kering, dan lain sebagainya. Sampah ini dapat diolah menjadi kompos. Sedangkan sampah anorganik merupakan sampah yang tidak mudah diuraikan atau undegradable. Contoh sampah anorganik adalah sampah yang tidak mudah membusuk, seperti plastik, kayu, kaca, kaleng, dan lain sebagainya. Sampah anorganik di daur ulang oleh industri rumahan untuk mengurangi jumlah sampah serta dijadikan sebagai peluang usaha. Berdasarkan bentuknya, sampah dapat dibedakan menjadi sampah padat, cair, alam, konsumsi, manusia dan radioaktif.',
+          ),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+            'Sampah padat adalah sampah yang berwujud padat. Sampah padat dapat berupa sampah rumah tangga misalnya seperti sampah dapur, kebun, plastik, metal, gelas dan lain-lain. Sampah organik dan anorganik termasuk sampah padat. Sampah ini dapat dibedakan berdasarkan kemampuan diurai oleh alam atau biodegrability menjadi sampah padat biodegradable (sampah yang dapat diuraikan oleh proses biologi) dan sampah padat non-biodegradable (tidak dapat diuraikan oleh suatu proses biologi. Sampah padat non-biodegradable ada dua jenis yaitu recyclable (dapat diolah kembali) dan non-recyclable (tidak dapat diolah kembali).',
+          ),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+            'Sampah cair adalah bahan cairan yang telah digunakan dan tidak diperlukan lagi, misalnya seperti limbah. Limbah adalah sampah cair yang dihasikan dari aktivitas industri. Limbah dapat dibagi menjadi dua yaitu limbah hitam dan limbah rumah tangga. Limbah hitam adalah sampah cair yang mengandung patogen berbahaya yang berasal dari toilet, sedangkan limbah rumah tangga adalah sampah cair yang dihasilkan dari dapur, kamar mandi, dan tempat cucian.',
+          ),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+            'Sampah alam adalah sampah yang diproduksi oleh alam dan diuraikan melalui proses daur ulang alami. Contoh dari sampah alam adalah daun kering di hutan yang terurai menjadi tanah. Sampah manusia adalah istilah yang digunakan terhadap hasil-hasil pencernaan manusia, seperti feses dan urin. Sampah manusia dapat menimbulkan dampak negatif bagi kesehatan manusia karena dapat dikatakan sebagai sarana perkembangan penyakit yang disebabkan oleh virus dan bakteri.',
+          ),
+          const Space(size: sizes.paragraphNewLineMedium),
+          buildNormalParagraph(
+            'Sampah konsumsi adalah sampah yang dihasilkan oleh kegiatan konsumsi manusia dan dibuang ke tempat sampah. Jumlah sampah konsumsi sampai sekarang tidak melebihi jumlah sampah industri. Limbah radioaktif adalah sampah nuklir yang merupakan hasil dari fusi nuklir dan fisi nuklir yang menghasilkan uranium dan thorium. Limbah radioaktif berbahaya bagi lingkungan dan kehidupan manusia karena menghasilkan radiasi yang berdampak buruk terhadap kesehatan manusia. Oleh karena itu, sampah nuklir disimpan di tempat-tempat yang tidak berpotensi tinggi untuk melakukan aktivitas, tempat-tempat yang dituju biasanya bekas tambang garam atau dasar laut.',
+          ),
+        ],
+      ),
     );
   }
-
-  ParagraphText _buildParagraph(String text) => ParagraphText(
-        text: text,
-        shouldShowIndentation: true,
-        spaceCount: 3,
-      );
 }

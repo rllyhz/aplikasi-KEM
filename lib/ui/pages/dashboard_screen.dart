@@ -171,6 +171,16 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             IllustrationCardButton(
+              text: 'Hasil',
+              illustrationPath: 'assets/images/dashboard/completed_form.png',
+              backgroundColor: colors.greenColor,
+              padding: paddingCard,
+              textColor: colors.whiteColor,
+              onIconPressed: () {
+                routes.navigateTo(context, ResultScreen.route);
+              },
+            ),
+            IllustrationCardButton(
               text: 'Peningkatan K.E.M',
               illustrationPath:
                   'assets/images/dashboard/man_flying_on_a_rocket.png',
@@ -179,16 +189,6 @@ class DashboardScreen extends StatelessWidget {
               textColor: colors.whiteColor,
               onIconPressed: () {
                 routes.navigateTo(context, KEMIncreasementScreen.route);
-              },
-            ),
-            IllustrationCardButton(
-              text: 'Hasil',
-              illustrationPath: 'assets/images/dashboard/completed_form.png',
-              backgroundColor: colors.greenColor,
-              padding: paddingCard,
-              textColor: colors.whiteColor,
-              onIconPressed: () {
-                routes.navigateTo(context, ResultScreen.route);
               },
             ),
           ],
