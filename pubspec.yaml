@@ -29,6 +29,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  audioplayers: ^1.1.1
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
@@ -123,6 +124,9 @@ flutter:
     - assets/images/kem_increasement/illustration_3.png
     - assets/images/kem_increasement/illustration_4.png
     - assets/images/result/main_illustration.png
+
+    # Audio files
+    - assets/audio/
 
   fonts:
     - family: Inter
