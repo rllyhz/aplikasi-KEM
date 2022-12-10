@@ -127,7 +127,7 @@ class DashboardScreen extends StatelessWidget {
           childAspectRatio: 2 / 2.45,
           children: [
             IllustrationCardButton(
-              text: 'Materi Membaca',
+              text: '1. Materi Membaca',
               illustrationPath: 'assets/images/dashboard/reading.png',
               backgroundColor: colors.redColor,
               padding: paddingCard,
@@ -138,7 +138,7 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             IllustrationCardButton(
-              text: 'Materi K.E.M',
+              text: '2. Materi KEM',
               illustrationPath:
                   'assets/images/dashboard/girls_study_together.png',
               backgroundColor: colors.orangeColor,
@@ -150,7 +150,7 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             IllustrationCardButton(
-              text: 'Pengukuran K.E.M',
+              text: '3. Pengukuran KEM',
               illustrationPath: 'assets/images/dashboard/web_page_update.png',
               backgroundColor: colors.limeColor,
               padding: paddingCard,
@@ -160,7 +160,7 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             IllustrationCardButton(
-              text: 'Latihan',
+              text: '4. Latihan',
               illustrationPath:
                   'assets/images/dashboard/online_business_negotiation.png',
               backgroundColor: colors.darkPurpleColor,
@@ -171,7 +171,7 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             IllustrationCardButton(
-              text: 'Hasil',
+              text: '5. Hasil',
               illustrationPath: 'assets/images/dashboard/completed_form.png',
               backgroundColor: colors.greenColor,
               padding: paddingCard,
@@ -181,7 +181,7 @@ class DashboardScreen extends StatelessWidget {
               },
             ),
             IllustrationCardButton(
-              text: 'Peningkatan K.E.M',
+              text: '6. Peningkatan KEM',
               illustrationPath:
                   'assets/images/dashboard/man_flying_on_a_rocket.png',
               backgroundColor: colors.lightBlueColor,

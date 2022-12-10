@@ -17,7 +17,7 @@ class KEMMeasurementScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MainDetailScaffold(
-      appBarTitleText: 'Pengukuran K.E.M',
+      appBarTitleText: 'Pengukuran KEM',
       appBarTitleTextColor: colors.darkTextColor,
       illustrationAssetName:
           'assets/images/kem_measurement/main_illustration.png',
@@ -28,7 +28,7 @@ class KEMMeasurementScreen extends StatelessWidget {
         children: [
           // Menu buttons
           ColoredCardButton(
-            label: 'Alat Pengukuran K.E.M',
+            label: 'Alat Pengukuran KEM',
             textColor: colors.whiteColor,
             backgroundColor: colors.darkPurpleColor,
             onIconPressed: () {
@@ -38,7 +38,7 @@ class KEMMeasurementScreen extends StatelessWidget {
           ),
           const Space(size: 12.0),
           ColoredCardButton(
-            label: 'Cara Mengukur K.E.M',
+            label: 'Cara Mengukur KEM',
             textColor: colors.whiteColor,
             backgroundColor: colors.lightBlueColor,
             onIconPressed: () {
@@ -48,7 +48,7 @@ class KEMMeasurementScreen extends StatelessWidget {
           ),
           const Space(size: 12.0),
           ColoredCardButton(
-            label: 'Standarisasi K.E.M',
+            label: 'Standarisasi KEM',
             textColor: colors.whiteColor,
             backgroundColor: colors.orangeColor,
             onIconPressed: () {

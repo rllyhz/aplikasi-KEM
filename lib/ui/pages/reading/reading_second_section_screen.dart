@@ -1,7 +1,9 @@
 import 'package:aplikasi_kem/ui/widgets/scaffolds/banner_scaffold.dart';
+import 'package:aplikasi_kem/ui/widgets/texts/paragraph_list.dart';
 import 'package:aplikasi_kem/ui/widgets/texts/paragraph_text.dart';
 import 'package:aplikasi_kem/ui/widgets/utils/space.dart';
 import 'package:aplikasi_kem/ui/widgets/texts/sub_heading_text.dart';
+import 'package:aplikasi_kem/utils/ui/text_numbering_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_kem/utils/ui/color_utils.dart' as colors;
 import 'package:aplikasi_kem/utils/values/sizes.dart' as sizes;
@@ -65,7 +67,7 @@ class ReadingSecondSectionScreen extends StatelessWidget {
 
           // c
           SubHeadingText(
-            text: 'Pengertian Membaca yang Cukup Kompleks',
+            text: 'Tujuan Khusus',
             isNumbering: true,
             numberingValue: 'b',
           ),
@@ -74,9 +76,31 @@ class ReadingSecondSectionScreen extends StatelessWidget {
           ),
           ParagraphText(
             text:
-                'Batas membaca yang cukup kompleks merupakan batasan membaca yang cakupan nya lebih kompleks dari batasan yang belum kompleks. Batasan ini memandang bahwa membaca sebagai proses pengenalan dan kembali serta pemahaman simbol-simbol tertulis. Maka dapat di simpulkan pengertian membaca yang cukup kompleks adalah membaca merupakan proses pengenalan dan menangkap bahan bacaan yang tertera secara tersurat atau eksplisit.',
+                'Tujuan khusus adalah tujuan yang dicanangkan pemabaca pada saat tertentu sesuai situasi dan kondisi. Misalnya, seorang yang sedang menunggu teman dekatnya melakukan kegiatan membaca. Ia membaca untuk mengisi waktu luang. Tujuan membaca yang semacam itu merupakan tujuan khusus membaca. Seperti hal nya tujuan umum, tujuan khusus juga cenderung berbeda-beda.',
             shouldShowIndentation: true,
             spaceCount: 3,
+          ),
+          Space(
+            size: sizes.paragraphNewLineSmall,
+          ),
+          ParagraphText(
+            text:
+                'Menurut Nurhadi, ada lima variasi tujuan membaca. Kelima variasi itu merupakan tujuan membaca secara khusus. Kelima tujuan tersebut adalah:',
+            shouldShowIndentation: true,
+            spaceCount: 3,
+          ),
+          Space(
+            size: sizes.paragraphNewLineSmall,
+          ),
+          ParagraphList(
+            numberingSuffix: NumberingSuffix.parentheses,
+            list: [
+              'Membaca untuk tujuan studi atau telaah ilmiah.',
+              'Membaca untuk menangkap garis besar bacaan.',
+              'Membaca untuk menikmati karya sastra.',
+              'Membaca untuk mengisi waktu luang.',
+              'Membaca untuk mencari keterangan tentang suatu yang ilmiah.',
+            ],
           ),
 
           Space(

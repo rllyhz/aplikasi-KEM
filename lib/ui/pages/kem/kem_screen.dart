@@ -16,7 +16,7 @@ class KEMScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MainDetailScaffold(
-      appBarTitleText: 'Materi K.E.M',
+      appBarTitleText: 'Materi KEM',
       appBarTitleTextColor: colors.darkTextColor,
       tagline: 'Tidak ada kata tua untuk belajar',
       illustrationAssetName: 'assets/images/kem/main_illustration.png',
@@ -24,7 +24,7 @@ class KEMScreen extends StatelessWidget {
         children: [
           // menu buttons
           ColoredCardButton(
-            label: 'Pengertian K.E.M',
+            label: 'Pengertian KEM',
             textColor: colors.whiteColor,
             backgroundColor: colors.greenColor,
             onIconPressed: () {
@@ -33,7 +33,7 @@ class KEMScreen extends StatelessWidget {
           ),
           const Space(size: 12.0),
           ColoredCardButton(
-            label: 'Faktor-faktor yang mempengaruhi K.E.M',
+            label: 'Faktor-faktor yang mempengaruhi KEM',
             textColor: colors.whiteColor,
             backgroundColor: colors.lightBlueColor,
             onIconPressed: () {

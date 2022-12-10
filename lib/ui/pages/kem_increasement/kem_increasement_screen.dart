@@ -31,7 +31,7 @@ class KEMIncreasementScreen extends StatelessWidget {
           ColoredCardButton(
             backgroundColor: colors.limeColor,
             label: 'Upaya Peningkatan KEM',
-            labelWidthInPercentage: 0.7,
+            labelWidthInPercentage: 0.6,
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(
@@ -42,7 +42,7 @@ class KEMIncreasementScreen extends StatelessWidget {
           ColoredCardButton(
             backgroundColor: colors.lightBlueColor,
             label: 'Metode Membaca Cepat',
-            labelWidthInPercentage: 0.7,
+            labelWidthInPercentage: 0.6,
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(
@@ -53,7 +53,7 @@ class KEMIncreasementScreen extends StatelessWidget {
           ColoredCardButton(
             backgroundColor: colors.orangeColor,
             label: 'Teknik Membaca Cepat',
-            labelWidthInPercentage: 0.7,
+            labelWidthInPercentage: 0.6,
             textColor: colors.whiteColor,
             onIconPressed: () {
               routes.navigateTo(
