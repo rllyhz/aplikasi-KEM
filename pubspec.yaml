@@ -125,6 +125,10 @@ flutter:
     - assets/images/kem_increasement/illustration_4.png
     - assets/images/result/main_illustration.png
 
+    # Audio icons
+    - assets/icons/icon_play.svg
+    - assets/icons/icon_pause.svg
+
     # Audio files
     - assets/audio/
 
