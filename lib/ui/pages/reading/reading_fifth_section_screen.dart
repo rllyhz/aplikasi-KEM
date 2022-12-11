@@ -20,6 +20,7 @@ class ReadingFifthSectionScreen extends StatelessWidget {
       appBarTitleTextColor: colors.darkTextColor,
       bannerAssetName: 'assets/images/reading/banner_5.png',
       headingText: 'Ringkasan',
+      shouldShowAudio: true,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
